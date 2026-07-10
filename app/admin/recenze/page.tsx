@@ -1,5 +1,6 @@
 import { getPendingReviews, getApprovedReviews, isDbConfigured } from '@/lib/reviews-db';
 import { approveReviewAction, deleteReviewAction } from '@/app/actions/reviews';
+import { getAdminKey } from '@/lib/admin';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,21 +30,19 @@ export default async function AdminReviews({
 }) {
   const sp = await searchParams;
   const key = typeof sp.key === 'string' ? sp.key : '';
-  const authed = Boolean(process.env.ADMIN_KEY) && key === process.env.ADMIN_KEY;
+  const admin = getAdminKey();
+  const authed = Boolean(admin) && key === admin;
 
   if (!authed) {
     return (
       <main>
         <h1>Admin — recenze</h1>
-        {!process.env.ADMIN_KEY ? (
+        {!admin ? (
           <p>
-            Není nastavená proměnná <code>ADMIN_KEY</code>. Přidej ji v prostředí (env) a otevři{' '}
-            <code>/admin/recenze?key=TVŮJ_KLÍČ</code>.
+            Chybí databázová konfigurace (<code>TURSO_AUTH_TOKEN</code> / <code>ADMIN_KEY</code>).
           </p>
         ) : (
-          <p>
-            Neplatný nebo chybějící klíč. Otevři <code>/admin/recenze?key=TVŮJ_KLÍČ</code>.
-          </p>
+          <p>Neplatný nebo chybějící klíč v URL.</p>
         )}
       </main>
     );

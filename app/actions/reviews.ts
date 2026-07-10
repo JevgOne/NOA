@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache';
 import { createReview, setReviewStatus, deleteReview } from '@/lib/reviews-db';
+import { getAdminKey } from '@/lib/admin';
 
 // Odeslání recenze návštěvníkem — uloží se jako "pending" (čeká na schválení).
 export async function submitReview(
@@ -30,7 +31,8 @@ function revalidateReviews() {
 
 function authorized(formData: FormData): boolean {
   const key = String(formData.get('key') || '');
-  return Boolean(process.env.ADMIN_KEY) && key === process.env.ADMIN_KEY;
+  const admin = getAdminKey();
+  return Boolean(admin) && key === admin;
 }
 
 export async function approveReviewAction(formData: FormData): Promise<void> {
