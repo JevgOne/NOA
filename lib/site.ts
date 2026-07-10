@@ -26,6 +26,8 @@ export const business = {
     { days: ['Saturday'], opens: '09:00', closes: '20:00' },
     { days: ['Sunday'], opens: '09:00', closes: '18:00' },
   ],
+  // Placeholder hodnocení — nahraď reálnými čísly (např. z Google Business).
+  aggregateRating: { ratingValue: 4.9, reviewCount: 127 },
 } as const;
 
 export const OG_IMAGE = '/og.png';

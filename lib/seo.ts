@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { SITE_URL, OG_IMAGE, business } from '@/lib/site';
 import { type Locale, type PageKey, getMessages, pathFor, languageAlternates } from '@/lib/i18n';
 import { classic, signature, boyfriends } from '@/lib/menu';
+import { reviews } from '@/lib/reviews';
 
 const ogLocale: Record<Locale, string> = { cs: 'cs_CZ', en: 'en_US' };
 
@@ -60,6 +61,7 @@ const openingHoursSpecification = business.openingHours.map((h) => ({
 // CafeOrCoffeeShop — hlavní entita provozovny.
 export function cafeSchema(locale: Locale): Record<string, unknown> {
   const m = getMessages(locale);
+  const body = getMessages(locale) as unknown as Record<string, string>;
   return {
     '@context': 'https://schema.org',
     '@type': 'CafeOrCoffeeShop',
@@ -76,6 +78,19 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     currenciesAccepted: business.currency,
     openingHoursSpecification,
     hasMenu: `${SITE_URL}${pathFor(locale, 'menu')}`,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: business.aggregateRating.ratingValue,
+      reviewCount: business.aggregateRating.reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    review: reviews.map((r) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: r.author },
+      reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
+      reviewBody: body[r.textKey],
+    })),
     ...(business.sameAs.length ? { sameAs: business.sameAs } : {}),
   };
 }

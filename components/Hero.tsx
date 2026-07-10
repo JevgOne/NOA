@@ -1,4 +1,5 @@
 import { type Locale, getT } from '@/lib/i18n';
+import OpenStatus from '@/components/OpenStatus';
 
 export default function Hero({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -15,6 +16,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         <div className="h-sub">MATCHA</div>
         <div className="h-cafe">{t('heroCafe')}</div>
         <div className="h-tag">{t('heroTag')}</div>
+        <OpenStatus locale={locale} className="hero-status" />
       </div>
       <a className="scroll-cue" href="#main">
         <span>{t('scrollCue')}</span>
