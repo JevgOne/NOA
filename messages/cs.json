@@ -44,9 +44,17 @@
   "lbPrev": "Předchozí",
   "lbNext": "Další",
   "mapH": "Kde nás najdete",
-  "mapTitle": "Mapa — NOA Matcha Café, Národní 12, Praha 1",
+  "mapTitle": "Mapa — NOA Matcha Café, Husitská 55, Praha 3 (Žižkov)",
   "instaH": "Sledujte nás na Instagramu",
   "instaCta": "Sledovat na Instagramu",
+  "faqH": "Časté dotazy",
+  "faq": [
+    { "q": "Kde vás najdu?", "a": "Najdete nás na Husitské 55, Praha 3 – Žižkov. Nejbližší tramvajová zastávka je Husinecká, kousek od Hlavního nádraží." },
+    { "q": "Máte i klasickou kávu?", "a": "Ano. Kromě matchy děláme i espresso, cappuccino, flat white, latte a další — najdete je v našem menu." },
+    { "q": "Co je ceremoniální matcha?", "a": "Ceremoniální matcha je nejvyšší kvalita zeleného čaje z prvního jarního sběru, jemně mletá na kamenných mlýncích. Má sytou barvu a hedvábnou, nehořkou chuť." },
+    { "q": "Dá se u vás rezervovat stůl?", "a": "Ano, stůl si můžete rezervovat telefonicky — kontakt najdete na stránce Kontakt." },
+    { "q": "Jaká je otevírací doba?", "a": "Otevřeno máme každý den: Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00." }
+  ],
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -124,30 +132,30 @@
   "skipToContent": "Přeskočit na obsah",
   "seo": {
     "siteName": "NOA Matcha Café",
-    "ogAlt": "NOA Matcha Café — prémiová matcha v srdci Prahy",
+    "ogAlt": "NOA Matcha Café — prémiová matcha v Praze 3, Žižkov",
     "home": {
-      "title": "NOA Matcha Café — Prémiová matcha v srdci Prahy",
-      "description": "Prémiová kavárna s ceremoniální matchou z Japonska. Matcha latte, ovocné a signature nápoje na Národní 12 v Praze. Otevřeno každý den."
+      "title": "NOA Matcha Café — Prémiová matcha v Praze 3, Žižkov",
+      "description": "Prémiová matcha kavárna s ceremoniální matchou z Japonska. Matcha latte, ovocné a signature nápoje i klasická káva na Husitské 55, Praha 3 – Žižkov. Otevřeno každý den."
     },
     "menu": {
-      "title": "Menu — NOA Matcha Café",
-      "description": "Kompletní nápojový lístek NOA Matcha: Classic a Signature matcha nápoje, ovocné variace i klasická káva. Ceny v Kč, Praha 1."
+      "title": "Menu a ceny — NOA Matcha Café Praha 3",
+      "description": "Kompletní nápojový lístek NOA Matcha: Classic a Signature matcha nápoje, ovocné variace i klasická káva. Ceny v Kč. Husitská 55, Praha 3 – Žižkov."
     },
     "gallery": {
-      "title": "Galerie — NOA Matcha Café",
-      "description": "Podívejte se do kavárny NOA Matcha — ceremoniální matcha, latte art, interiér a atmosféra v srdci Prahy."
+      "title": "Galerie — NOA Matcha Café Praha 3",
+      "description": "Podívejte se do kavárny NOA Matcha — ceremoniální matcha, latte art, interiér a atmosféra. Husitská 55, Praha 3 – Žižkov."
     },
     "reviews": {
-      "title": "Recenze — NOA Matcha Café",
-      "description": "Recenze a hodnocení kavárny NOA Matcha v Praze. Přečtěte si zkušenosti hostů a napište vlastní recenzi."
+      "title": "Recenze a hodnocení — NOA Matcha Café Praha 3",
+      "description": "Recenze a hodnocení matcha kavárny NOA Matcha, Praha 3 (Žižkov). Přečtěte si zkušenosti hostů a napište vlastní recenzi."
     },
     "about": {
-      "title": "O nás — NOA Matcha Café",
-      "description": "Ceremoniální matcha přímo z japonských čajových zahrad, ručně šlehaná bambusovým chasenem. Poctivost, řemeslo a klid v srdci Prahy."
+      "title": "O nás — NOA Matcha Café Praha 3, Žižkov",
+      "description": "Ceremoniální matcha přímo z japonských čajových zahrad, ručně šlehaná bambusovým chasenem. Poctivost, řemeslo a klid na Husitské 55, Praha 3 – Žižkov."
     },
     "contact": {
-      "title": "Kontakt — NOA Matcha Café",
-      "description": "Najdete nás na Národní 12, 110 00 Praha 1. Otevírací doba, telefon a e-mail na kavárnu NOA Matcha. Zastavte se na šálek."
+      "title": "Kontakt — NOA Matcha Café Praha 3, Žižkov",
+      "description": "Najdete nás na Husitské 55, 130 00 Praha 3 (Žižkov). Otevírací doba, telefon, e-mail a mapa kavárny NOA Matcha. Zastavte se na šálek matchy."
     }
   }
 }

@@ -1,25 +1,56 @@
 import type { Metadata } from 'next';
-import { SITE_URL, OG_IMAGE, business } from '@/lib/site';
+import { SITE_URL, business } from '@/lib/site';
 import { type Locale, type PageKey, getMessages, pathFor, languageAlternates } from '@/lib/i18n';
 import { classic, signature, boyfriends } from '@/lib/menu';
+import { social } from '@/lib/site';
+import { galleryPhotos, photoUrl } from '@/lib/gallery';
 import type { Review, Aggregate } from '@/lib/reviews-db';
 
 const ogLocale: Record<Locale, string> = { cs: 'cs_CZ', en: 'en_US' };
 
-// Sestaví kompletní Metadata (title, description, canonical, hreflang, OG, Twitter) pro stránku + jazyk.
+const keywords: Record<Locale, string[]> = {
+  cs: [
+    'matcha', 'matcha Praha', 'matcha kavárna', 'matcha latte Praha', 'ceremoniální matcha',
+    'kavárna Praha 3', 'kavárna Žižkov', 'matcha Žižkov', 'Husitská 55', 'NOA Matcha', 'káva Praha 3',
+  ],
+  en: [
+    'matcha', 'matcha Prague', 'matcha café', 'matcha latte Prague', 'ceremonial matcha',
+    'café Prague 3', 'café Žižkov', 'matcha Žižkov', 'Husitská 55', 'NOA Matcha', 'coffee Prague 3',
+  ],
+};
+
+// Sestaví kompletní Metadata (title, description, canonical, hreflang, robots, geo, OG, Twitter).
 export function buildMetadata(locale: Locale, page: PageKey): Metadata {
   const m = getMessages(locale);
   const seo = m.seo[page];
   const canonical = pathFor(locale, page);
   const otherLocale: Locale = locale === 'cs' ? 'en' : 'cs';
+  const { latitude, longitude } = business.geo;
 
   return {
     metadataBase: new URL(SITE_URL),
     title: seo.title,
     description: seo.description,
+    applicationName: business.name,
+    authors: [{ name: business.name, url: SITE_URL }],
+    creator: business.name,
+    publisher: business.name,
+    category: 'food',
+    keywords: keywords[locale],
     alternates: {
       canonical,
       languages: languageAlternates(page),
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
     },
     openGraph: {
       type: 'website',
@@ -29,13 +60,17 @@ export function buildMetadata(locale: Locale, page: PageKey): Metadata {
       siteName: m.seo.siteName,
       locale: ogLocale[locale],
       alternateLocale: ogLocale[otherLocale],
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: m.seo.ogAlt }],
     },
     twitter: {
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [OG_IMAGE],
+    },
+    other: {
+      'geo.region': 'CZ-10',
+      'geo.placename': `${business.city}, ${business.district}`,
+      'geo.position': `${latitude};${longitude}`,
+      ICBM: `${latitude}, ${longitude}`,
     },
   };
 }
@@ -76,9 +111,16 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     servesCuisine: business.servesCuisine as unknown as string[],
     priceRange: business.priceRange,
     currenciesAccepted: business.currency,
+    paymentAccepted: 'Cash, Credit Card',
     openingHoursSpecification,
     hasMenu: `${SITE_URL}${pathFor(locale, 'menu')}`,
-    ...(business.sameAs.length ? { sameAs: business.sameAs } : {}),
+    acceptsReservations: true,
+    image: galleryPhotos.slice(0, 4).map((p) => photoUrl(p.id, 1200)),
+    logo: `${SITE_URL}/icon.svg`,
+    hasMap: `https://www.google.com/maps?q=${encodeURIComponent(`${business.street}, ${business.postalCode} ${business.city}`)}`,
+    areaServed: { '@type': 'City', name: 'Praha' },
+    keywords: keywords[locale].join(', '),
+    sameAs: [social.instagram, social.facebook].filter(Boolean),
   };
 }
 
@@ -156,5 +198,19 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
       { '@type': 'ListItem', position: 1, name: m.breadcrumbHome, item: `${SITE_URL}${pathFor(locale, 'home')}` },
       { '@type': 'ListItem', position: 2, name: label[page], item: `${SITE_URL}${pathFor(locale, page)}` },
     ],
+  };
+}
+
+// FAQPage — časté dotazy (rich results v Googlu). Data z messages.faq.
+export function faqSchema(locale: Locale): Record<string, unknown> {
+  const faq = (getMessages(locale) as unknown as { faq: { q: string; a: string }[] }).faq;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   };
 }

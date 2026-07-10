@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { type Locale, getT, pathFor } from '@/lib/i18n';
+import { business } from '@/lib/site';
 
 export default function InviteSection({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -10,7 +11,7 @@ export default function InviteSection({ locale }: { locale: Locale }) {
       <div className="meta">
         <div>
           <div className="k">{t('inviteAddrK')}</div>
-          <div className="v">Národní 12, Praha 1</div>
+          <div className="v">{business.street}, {business.city}</div>
         </div>
         <div>
           <div className="k">{t('inviteHoursK')}</div>

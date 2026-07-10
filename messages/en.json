@@ -44,9 +44,17 @@
   "lbPrev": "Previous",
   "lbNext": "Next",
   "mapH": "Find us",
-  "mapTitle": "Map — NOA Matcha Café, Národní 12, Prague 1",
+  "mapTitle": "Map — NOA Matcha Café, Husitská 55, Prague 3 (Žižkov)",
   "instaH": "Follow us on Instagram",
   "instaCta": "Follow on Instagram",
+  "faqH": "Frequently asked questions",
+  "faq": [
+    { "q": "Where can I find you?", "a": "You'll find us at Husitská 55, Prague 3 – Žižkov. The nearest tram stop is Husinecká, a short walk from the Main Train Station." },
+    { "q": "Do you also serve regular coffee?", "a": "Yes. Besides matcha we make espresso, cappuccino, flat white, latte and more — see our menu." },
+    { "q": "What is ceremonial matcha?", "a": "Ceremonial matcha is the highest grade of green tea from the first spring harvest, stone-milled into a fine powder. It has a vivid color and a silky, non-bitter taste." },
+    { "q": "Can I reserve a table?", "a": "Yes, you can reserve a table by phone — find the contact on the Contact page." },
+    { "q": "What are your opening hours?", "a": "We're open every day: Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
+  ],
   "heroTag": "Premium café with ceremonial matcha from Japan",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -124,30 +132,30 @@
   "skipToContent": "Skip to content",
   "seo": {
     "siteName": "NOA Matcha Café",
-    "ogAlt": "NOA Matcha Café — premium matcha in the heart of Prague",
+    "ogAlt": "NOA Matcha Café — premium matcha in Prague 3, Žižkov",
     "home": {
-      "title": "NOA Matcha Café — Premium matcha in the heart of Prague",
-      "description": "Premium café with ceremonial matcha from Japan. Matcha latte, fruity and signature drinks at Národní 12 in Prague. Open every day."
+      "title": "NOA Matcha Café — Premium matcha in Prague 3, Žižkov",
+      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte, fruity and signature drinks and classic coffee at Husitská 55, Prague 3 – Žižkov. Open every day."
     },
     "menu": {
-      "title": "Menu — NOA Matcha Café",
-      "description": "The full NOA Matcha drinks list: Classic and Signature matcha drinks, fruity variations and classic coffee. Prices in CZK, Prague 1."
+      "title": "Menu & prices — NOA Matcha Café Prague 3",
+      "description": "The full NOA Matcha drinks list: Classic and Signature matcha drinks, fruity variations and classic coffee. Prices in CZK. Husitská 55, Prague 3 – Žižkov."
     },
     "gallery": {
-      "title": "Gallery — NOA Matcha Café",
-      "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere in the heart of Prague."
+      "title": "Gallery — NOA Matcha Café Prague 3",
+      "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere. Husitská 55, Prague 3 – Žižkov."
     },
     "reviews": {
-      "title": "Reviews — NOA Matcha Café",
-      "description": "Reviews and ratings of NOA Matcha café in Prague. Read guest experiences and write your own review."
+      "title": "Reviews & ratings — NOA Matcha Café Prague 3",
+      "description": "Reviews and ratings of NOA Matcha café, Prague 3 (Žižkov). Read guest experiences and write your own review."
     },
     "about": {
-      "title": "About — NOA Matcha Café",
-      "description": "Ceremonial matcha sourced directly from Japanese tea gardens, hand-whisked with a bamboo chasen. Honesty, craft and calm in the heart of Prague."
+      "title": "About — NOA Matcha Café Prague 3, Žižkov",
+      "description": "Ceremonial matcha sourced directly from Japanese tea gardens, hand-whisked with a bamboo chasen. Honesty, craft and calm at Husitská 55, Prague 3 – Žižkov."
     },
     "contact": {
-      "title": "Contact — NOA Matcha Café",
-      "description": "Find us at Národní 12, 110 00 Prague 1. Opening hours, phone and e-mail for NOA Matcha café. Drop by for a cup."
+      "title": "Contact — NOA Matcha Café Prague 3, Žižkov",
+      "description": "Find us at Husitská 55, 130 00 Prague 3 (Žižkov). Opening hours, phone, e-mail and map for NOA Matcha café. Drop by for a cup of matcha."
     }
   }
 }

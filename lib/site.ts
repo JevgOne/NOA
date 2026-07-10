@@ -6,9 +6,10 @@ export const SITE_URL = 'https://noamatcha.cz';
 export const business = {
   name: 'NOA Matcha Café',
   legalName: 'NOA Matcha',
-  street: 'Národní 12',
-  postalCode: '110 00',
-  city: 'Praha 1',
+  street: 'Husitská 55',
+  postalCode: '130 00',
+  city: 'Praha 3',
+  district: 'Žižkov',
   region: 'Praha',
   country: 'CZ',
   phone: '+420777123456',
@@ -17,8 +18,8 @@ export const business = {
   priceRange: '$$',
   servesCuisine: ['Matcha', 'Coffee', 'Café'],
   currency: 'CZK',
-  // Placeholder geo — doplň reálné souřadnice provozovny.
-  geo: { latitude: 50.0810, longitude: 14.4190 },
+  // Přibližné souřadnice Husitská 55, Praha 3 (Žižkov) — dolaď přesně dle provozovny.
+  geo: { latitude: 50.0882, longitude: 14.4525 },
   // Placeholder — doplň reálné profily.
   sameAs: [] as string[],
   openingHours: [
