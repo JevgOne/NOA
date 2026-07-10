@@ -8,6 +8,7 @@ import CafeSection from '@/components/CafeSection';
 import InviteSection from '@/components/InviteSection';
 import QualityStrip from '@/components/QualityStrip';
 import Reviews from '@/components/Reviews';
+import Instagram from '@/components/Instagram';
 import Footline from '@/components/Footline';
 
 // ISR: home ukazuje nejnovější schválené recenze z DB — obnovuj každou minutu.
@@ -38,6 +39,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <InviteSection locale={l} />
           <QualityStrip locale={l} />
           <Reviews locale={l} />
+          <Instagram locale={l} />
           <Footline locale={l} />
         </div>
       </main>

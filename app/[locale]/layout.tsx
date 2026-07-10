@@ -8,6 +8,7 @@ import { cafeSchema } from '@/lib/seo';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Enhance from '@/components/Enhance';
+import Ambient from '@/components/Ambient';
 import JsonLd from '@/components/JsonLd';
 
 const cinzel = Cinzel({
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: JS_FLAG }} />
         <a className="skip-link" href="#main">{t('skipToContent')}</a>
         <div className="bg" />
+        <Ambient />
         <div className="wrap">
           <Nav locale={l} />
           {children}
