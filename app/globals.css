@@ -100,8 +100,8 @@ main{padding:clamp(2rem,4vw,3rem) 0 clamp(3rem,7vw,5rem)}
 .invite h2{font-family:var(--font-cinzel);font-weight:600;letter-spacing:.06em;font-size:clamp(1.6rem,4vw,2.6rem);margin:.9rem 0 1.3rem;color:var(--paper-hi);position:relative}
 .invite .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:1.2rem 2.5rem;position:relative;margin-bottom:1.6rem}
 .invite .meta div{text-align:center}
-.invite .meta .k{font-family:var(--font-cinzel);letter-spacing:.16em;text-transform:uppercase;font-size:.64rem;opacity:.7;margin-bottom:.3rem}
-.invite .meta .v{font-size:1.05rem}
+.invite .meta .k{font-family:var(--font-cinzel);font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-size:.66rem;color:var(--lime,#C7DA9A);opacity:.95;margin-bottom:.45rem}
+.invite .meta .v{font-size:1.12rem;font-weight:500;color:#F7EEDA}
 .invite .btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-cinzel);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:var(--green);background:var(--paper-hi);text-decoration:none;padding:.8rem 1.7rem;border-radius:2px;position:relative;transition:transform .2s,background .2s;cursor:pointer}
 .invite .btn:hover{transform:translateY(-2px);background:#fff}
 .invite .btn svg{width:16px;height:16px}
@@ -188,11 +188,12 @@ main{padding:clamp(2rem,4vw,3rem) 0 clamp(3rem,7vw,5rem)}
 .socials svg{width:24px;height:24px}
 
 /* breadcrumbs */
-.crumbs{max-width:1000px;margin:0 auto;padding:.2rem 1.5rem 0}
-.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-family:var(--font-cinzel);letter-spacing:.1em;text-transform:uppercase;font-size:.64rem;color:var(--muted)}
-.crumbs a{color:var(--green);text-decoration:none}
+.crumbs{max-width:1000px;margin:0 auto;padding:clamp(1.3rem,3vw,2rem) 1.5rem 0}
+.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;font-family:var(--font-cinzel);font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:.7rem;color:var(--muted)}
+.crumbs a{color:var(--green-soft);text-decoration:none;transition:color .2s}
 .crumbs a:hover{color:var(--wine)}
-.crumbs .sep{color:var(--rule)}
+.crumbs .sep{display:inline-flex;color:var(--rule)}
+.crumbs .sep svg{width:12px;height:12px}
 .crumbs [aria-current="page"]{color:var(--wine)}
 
 /* footer */
