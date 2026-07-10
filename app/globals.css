@@ -311,8 +311,10 @@ footer.site .fc{font-family:var(--font-cinzel);font-weight:400;letter-spacing:.1
   .value{border-left:none}
 }
 @media(max-width:560px){
+  /* header nesmí mít backdrop-filter — jinak je containing block pro fixed panel a menu se ořízne */
+  header{backdrop-filter:none;-webkit-backdrop-filter:none}
   .burger{display:block}
-  .nav-links{position:fixed;inset:0 0 0 auto;width:min(78vw,280px);background:var(--paper-hi);flex-direction:column;align-items:flex-start;padding:4.5rem 1.5rem;gap:.3rem;transform:translateX(100%);transition:transform .3s;border-left:1px solid var(--rule);box-shadow:-20px 0 40px -30px rgba(0,0,0,.5)}
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(78vw,280px);background:var(--paper-hi);flex-direction:column;align-items:flex-start;padding:4.5rem 1.5rem;gap:.3rem;transform:translateX(100%);transition:transform .3s;border-left:1px solid var(--rule);box-shadow:-20px 0 40px -30px rgba(0,0,0,.5);z-index:50;overflow-y:auto}
   .nav-links.open{transform:none}
   .nav-links a{font-size:.9rem;padding:.6rem .4rem}
   .grid4{grid-template-columns:1fr;max-width:320px;margin:0 auto}
