@@ -19,6 +19,23 @@
   "statusClosesAt": "closes at {time}",
   "statusOpensAt": "opens at {time}",
   "reviewsH": "What guests say",
+  "navReviews": "Reviews",
+  "reviewsPageH": "Reviews",
+  "reviewsLead": "Read what our guests say — or share your own experience.",
+  "reviewsEmpty": "There are no reviews yet. Be the first to share your experience!",
+  "allReviewsCta": "All reviews",
+  "writeReviewCta": "Write a review",
+  "formH": "Write a review",
+  "fName": "Your name",
+  "fRating": "Rating",
+  "fText": "Your review",
+  "fSubmit": "Submit review",
+  "fSending": "Sending…",
+  "fSuccess": "Thank you! Your review has been submitted and is awaiting approval.",
+  "fErrName": "Please enter your name (2–60 characters).",
+  "fErrRating": "Please select a star rating.",
+  "fErrBody": "The review must be at least 10 characters.",
+  "fErrDb": "We couldn't save your review. Please try again later.",
   "r1": "The best matcha I've had in Prague. Creamy, rich and made with care. I come here every week.",
   "r2": "A calm place with an incredible atmosphere. The Coconut Cloud Matcha is an experience in itself.",
   "r3": "Finally a café where matcha isn't just a trend but the main star. I recommend it to everyone.",
@@ -117,6 +134,10 @@
     "gallery": {
       "title": "Gallery — NOA Matcha Café",
       "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere in the heart of Prague."
+    },
+    "reviews": {
+      "title": "Reviews — NOA Matcha Café",
+      "description": "Reviews and ratings of NOA Matcha café in Prague. Read guest experiences and write your own review."
     },
     "about": {
       "title": "About — NOA Matcha Café",

@@ -3,10 +3,11 @@ import { type Locale, getT, pathFor } from '@/lib/i18n';
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = getT(locale);
-  const items: { key: 'home' | 'menu' | 'gallery' | 'about' | 'contact'; label: string }[] = [
+  const items: { key: 'home' | 'menu' | 'gallery' | 'reviews' | 'about' | 'contact'; label: string }[] = [
     { key: 'home', label: t('navHome') },
     { key: 'menu', label: t('navMenu') },
     { key: 'gallery', label: t('navGallery') },
+    { key: 'reviews', label: t('navReviews') },
     { key: 'about', label: t('navAbout') },
     { key: 'contact', label: t('navContact') },
   ];

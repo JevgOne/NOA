@@ -13,9 +13,10 @@ export default function Nav({ locale }: { locale: Locale }) {
   const isActive = (href: string) =>
     pathname === href || pathname === `${href}/`;
 
-  const links: { key: 'menu' | 'gallery' | 'about' | 'contact'; label: string }[] = [
+  const links: { key: 'menu' | 'gallery' | 'reviews' | 'about' | 'contact'; label: string }[] = [
     { key: 'menu', label: t('navMenu') },
     { key: 'gallery', label: t('navGallery') },
+    { key: 'reviews', label: t('navReviews') },
     { key: 'about', label: t('navAbout') },
     { key: 'contact', label: t('navContact') },
   ];

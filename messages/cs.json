@@ -19,6 +19,23 @@
   "statusClosesAt": "zavírá v {time}",
   "statusOpensAt": "otevírá v {time}",
   "reviewsH": "Co říkají hosté",
+  "navReviews": "Recenze",
+  "reviewsPageH": "Recenze",
+  "reviewsLead": "Přečtěte si, co o nás říkají hosté — nebo napište vlastní zkušenost.",
+  "reviewsEmpty": "Zatím tu nejsou žádné recenze. Buďte první, kdo se podělí o zážitek!",
+  "allReviewsCta": "Všechny recenze",
+  "writeReviewCta": "Napsat recenzi",
+  "formH": "Napište recenzi",
+  "fName": "Vaše jméno",
+  "fRating": "Hodnocení",
+  "fText": "Vaše recenze",
+  "fSubmit": "Odeslat recenzi",
+  "fSending": "Odesílám…",
+  "fSuccess": "Děkujeme! Vaše recenze byla odeslána a čeká na schválení.",
+  "fErrName": "Zadejte prosím jméno (2–60 znaků).",
+  "fErrRating": "Vyberte prosím hodnocení hvězdičkami.",
+  "fErrBody": "Recenze musí mít alespoň 10 znaků.",
+  "fErrDb": "Recenzi se nepodařilo uložit. Zkuste to prosím později.",
   "r1": "Nejlepší matcha, jakou jsem v Praze měla. Krémová, sytá a připravená s péčí. Chodím sem každý týden.",
   "r2": "Klidné místo s neuvěřitelnou atmosférou. Coconut Cloud Matcha je zážitek sám o sobě.",
   "r3": "Konečně kavárna, kde matcha není jen módní doplněk, ale hlavní hvězda. Doporučuji všem.",
@@ -117,6 +134,10 @@
     "gallery": {
       "title": "Galerie — NOA Matcha Café",
       "description": "Podívejte se do kavárny NOA Matcha — ceremoniální matcha, latte art, interiér a atmosféra v srdci Prahy."
+    },
+    "reviews": {
+      "title": "Recenze — NOA Matcha Café",
+      "description": "Recenze a hodnocení kavárny NOA Matcha v Praze. Přečtěte si zkušenosti hostů a napište vlastní recenzi."
     },
     "about": {
       "title": "O nás — NOA Matcha Café",

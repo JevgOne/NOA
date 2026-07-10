@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/site';
 import { locales, type PageKey, pathFor, languageAlternates } from '@/lib/i18n';
 
-const pages: PageKey[] = ['home', 'menu', 'about', 'contact'];
+const pages: PageKey[] = ['home', 'menu', 'gallery', 'reviews', 'about', 'contact'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

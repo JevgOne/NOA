@@ -29,7 +29,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 };
 
-export const dynamicParams = false;
+// dynamicParams=true kvůli on-demand revalidaci home po schválení recenze.
+// Neplatný jazyk stále vrací 404 přes notFound() guard v layoutu.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

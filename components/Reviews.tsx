@@ -1,6 +1,6 @@
-import { type Locale, getT } from '@/lib/i18n';
-import { reviews } from '@/lib/reviews';
-import { business } from '@/lib/site';
+import Link from 'next/link';
+import { type Locale, getT, pathFor } from '@/lib/i18n';
+import { getApprovedReviews, getAggregate } from '@/lib/reviews-db';
 
 const Star = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -18,9 +18,11 @@ function Stars({ n }: { n: number }) {
   );
 }
 
-export default function Reviews({ locale }: { locale: Locale }) {
+// Home sekce: pár nejnovějších schválených recenzí + odkaz na celou stránku.
+export default async function Reviews({ locale }: { locale: Locale }) {
   const t = getT(locale);
-  const { ratingValue, reviewCount } = business.aggregateRating;
+  const [list, agg] = await Promise.all([getApprovedReviews(3), getAggregate()]);
+  if (!list.length) return null;
 
   return (
     <section className="reviews reveal" aria-label={t('reviewsH')}>
@@ -30,20 +32,31 @@ export default function Reviews({ locale }: { locale: Locale }) {
         <span className="l" />
       </div>
 
-      <div className="rating-summary">
-        <Stars n={5} />
-        <span className="rating-num">{ratingValue.toLocaleString(locale)}</span>
-        <span className="rating-count">· {reviewCount}</span>
-      </div>
+      {agg && (
+        <div className="rating-summary">
+          <Stars n={5} />
+          <span className="rating-num">{agg.ratingValue.toLocaleString(locale)}</span>
+          <span className="rating-count">· {agg.reviewCount}</span>
+        </div>
+      )}
 
       <div className="review-grid">
-        {reviews.map((r) => (
-          <figure key={r.textKey} className="review-card">
+        {list.map((r) => (
+          <figure key={r.id} className="review-card">
             <Stars n={r.rating} />
-            <blockquote>{t(r.textKey)}</blockquote>
+            <blockquote>{r.body}</blockquote>
             <figcaption>{r.author}</figcaption>
           </figure>
         ))}
+      </div>
+
+      <div className="reviews-cta">
+        <Link className="cafe-cta" href={pathFor(locale, 'reviews')}>
+          <span>{t('allReviewsCta')}</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </Link>
       </div>
     </section>
   );

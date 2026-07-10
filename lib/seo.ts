@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { SITE_URL, OG_IMAGE, business } from '@/lib/site';
 import { type Locale, type PageKey, getMessages, pathFor, languageAlternates } from '@/lib/i18n';
 import { classic, signature, boyfriends } from '@/lib/menu';
-import { reviews } from '@/lib/reviews';
+import type { Review, Aggregate } from '@/lib/reviews-db';
 
 const ogLocale: Record<Locale, string> = { cs: 'cs_CZ', en: 'en_US' };
 
@@ -59,9 +59,9 @@ const openingHoursSpecification = business.openingHours.map((h) => ({
 }));
 
 // CafeOrCoffeeShop — hlavní entita provozovny.
+// Site-wide entita provozovny (bez hodnocení — to se přidává na stránce recenzí z reálných dat).
 export function cafeSchema(locale: Locale): Record<string, unknown> {
   const m = getMessages(locale);
-  const body = getMessages(locale) as unknown as Record<string, string>;
   return {
     '@context': 'https://schema.org',
     '@type': 'CafeOrCoffeeShop',
@@ -78,20 +78,32 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     currenciesAccepted: business.currency,
     openingHoursSpecification,
     hasMenu: `${SITE_URL}${pathFor(locale, 'menu')}`,
+    ...(business.sameAs.length ? { sameAs: business.sameAs } : {}),
+  };
+}
+
+// Hvězdičky do Googlu — z REÁLNÝCH schválených recenzí (jinak nic).
+export function reviewsSchema(aggregate: Aggregate | null, reviews: Review[]): Record<string, unknown> | null {
+  if (!aggregate) return null;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CafeOrCoffeeShop',
+    '@id': `${SITE_URL}/#cafe`,
+    name: business.name,
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: business.aggregateRating.ratingValue,
-      reviewCount: business.aggregateRating.reviewCount,
+      ratingValue: aggregate.ratingValue,
+      reviewCount: aggregate.reviewCount,
       bestRating: 5,
       worstRating: 1,
     },
-    review: reviews.map((r) => ({
+    review: reviews.slice(0, 20).map((r) => ({
       '@type': 'Review',
       author: { '@type': 'Person', name: r.author },
       reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
-      reviewBody: body[r.textKey],
+      reviewBody: r.body,
+      datePublished: r.createdAt,
     })),
-    ...(business.sameAs.length ? { sameAs: business.sameAs } : {}),
   };
 }
 
@@ -133,6 +145,7 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
   const label: Record<Exclude<PageKey, 'home'>, string> = {
     menu: m.navMenu,
     gallery: m.navGallery,
+    reviews: m.navReviews,
     about: m.navAbout,
     contact: m.navContact,
   };

@@ -10,6 +10,9 @@ import QualityStrip from '@/components/QualityStrip';
 import Reviews from '@/components/Reviews';
 import Footline from '@/components/Footline';
 
+// ISR: home ukazuje nejnovější schválené recenze z DB — obnovuj každou minutu.
+export const revalidate = 60;
+
 export async function generateMetadata({
   params,
 }: {

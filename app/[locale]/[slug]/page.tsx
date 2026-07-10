@@ -5,10 +5,15 @@ import { buildMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MenuContent from '@/components/MenuContent';
 import GalleryContent from '@/components/GalleryContent';
+import ReviewsContent from '@/components/ReviewsContent';
 import AboutContent from '@/components/AboutContent';
 import ContactContent from '@/components/ContactContent';
 
-export const dynamicParams = false;
+// dynamicParams=true: umožní on-demand revalidaci (schválení recenze) bez NoFallbackError.
+// Neplatné slugy stále vrací 404 přes notFound() guard níže.
+export const dynamicParams = true;
+// ISR: stránka recenzí čte z DB — obnovuj obsah každou minutu.
+export const revalidate = 60;
 
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
@@ -44,6 +49,7 @@ export default async function SlugPage({
   const labels: Record<string, string> = {
     menu: t('navMenu'),
     gallery: t('navGallery'),
+    reviews: t('navReviews'),
     about: t('navAbout'),
     contact: t('navContact'),
   };
@@ -53,6 +59,7 @@ export default async function SlugPage({
       <Breadcrumbs locale={l} page={page} label={labels[page]} />
       {page === 'menu' && <MenuContent locale={l} />}
       {page === 'gallery' && <GalleryContent locale={l} />}
+      {page === 'reviews' && <ReviewsContent locale={l} />}
       {page === 'about' && <AboutContent locale={l} />}
       {page === 'contact' && <ContactContent locale={l} />}
     </>

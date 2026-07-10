@@ -91,6 +91,41 @@ Dále:
 3. Přidej podset fontu (pokud jazyk potřebuje jiné znaky) v `app/[locale]/layout.tsx`.
 4. Doplň `ogLocale` v `lib/seo.ts`.
 
+## Recenze (databáze Turso + moderace)
+
+Návštěvníci můžou psát recenze na `/recenze` (`/reviews`). Nová recenze se uloží jako
+**„čeká na schválení"** a zobrazí se až po schválení v adminu. Hodnocení (hvězdičky) i
+`AggregateRating` / `Review` JSON-LD se počítají z **reálných schválených** recenzí.
+
+### Potřebné proměnné prostředí
+
+| Proměnná | Popis |
+|----------|-------|
+| `TURSO_DATABASE_URL` | URL Turso databáze (`libsql://...`). Bez ní běží lokální `local.db` (jen pro vývoj). |
+| `TURSO_AUTH_TOKEN` | Auth token k Turso databázi. |
+| `ADMIN_KEY` | Tajný klíč pro přístup do moderace `/admin/recenze?key=…`. |
+
+### Založení Turso databáze
+
+```bash
+# instalace CLI: https://docs.turso.tech/quickstart
+turso db create noa-matcha
+turso db show noa-matcha --url          # -> TURSO_DATABASE_URL
+turso db tokens create noa-matcha       # -> TURSO_AUTH_TOKEN
+```
+
+Proměnné nastav lokálně v `.env.local` a na Vercelu v **Project Settings → Environment
+Variables**. Tabulka `reviews` se vytvoří automaticky při prvním použití a naseeduje se
+3 ukázkovými recenzemi (**smaž je v adminu**, jsou to placeholdery).
+
+### Moderace
+
+Otevři `https://…/admin/recenze?key=TVŮJ_ADMIN_KEY` — uvidíš recenze čekající na schválení
+(schválit / smazat) i schválené. Admin je `noindex` a mimo veřejnou navigaci.
+
+> Bez nastavené Turso DB web funguje dál, jen sekce recenzí je prázdná a odeslání formuláře
+> zahlásí chybu — jakmile doplníš env proměnné, vše naběhne.
+
 ## Nasazení
 
 Připraveno pro **Vercel** (build `next build` prochází). Zatím bez nasazení — po připojení
