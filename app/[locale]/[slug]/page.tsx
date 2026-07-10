@@ -4,6 +4,7 @@ import { isLocale, type Locale, slugForPage, pageForSlug, getT } from '@/lib/i18
 import { buildMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import MenuContent from '@/components/MenuContent';
+import GalleryContent from '@/components/GalleryContent';
 import AboutContent from '@/components/AboutContent';
 import ContactContent from '@/components/ContactContent';
 
@@ -40,13 +41,18 @@ export default async function SlugPage({
   if (!page || page === 'home') notFound();
 
   const t = getT(l);
-  const label =
-    page === 'menu' ? t('navMenu') : page === 'about' ? t('navAbout') : t('navContact');
+  const labels: Record<string, string> = {
+    menu: t('navMenu'),
+    gallery: t('navGallery'),
+    about: t('navAbout'),
+    contact: t('navContact'),
+  };
 
   return (
     <>
-      <Breadcrumbs locale={l} page={page} label={label} />
+      <Breadcrumbs locale={l} page={page} label={labels[page]} />
       {page === 'menu' && <MenuContent locale={l} />}
+      {page === 'gallery' && <GalleryContent locale={l} />}
       {page === 'about' && <AboutContent locale={l} />}
       {page === 'contact' && <ContactContent locale={l} />}
     </>

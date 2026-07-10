@@ -1,8 +1,19 @@
 {
   "navHome": "Domů",
   "navMenu": "Menu",
+  "navGallery": "Galerie",
   "navAbout": "O nás",
   "navContact": "Kontakt",
+  "galleryH": "Galerie",
+  "galleryLead": "Nahlédněte k nám — matcha, řemeslo a klid v každém detailu.",
+  "ga1": "Šálek ceremoniální matchy s bambusovým chasenem",
+  "ga2": "Ceremoniální matcha prášek a bambusová metlička",
+  "ga3": "Matcha latte s dekorem z pěny",
+  "ga4": "Latte art v šálku na dřevěném stole",
+  "ga5": "Detail šálku kávy v kavárně NOA",
+  "ga6": "Interiér kavárny NOA v přirozeném světle",
+  "ga7": "Čerstvě připravený nápoj na baru",
+  "ga8": "Ranní šálek u okna kavárny",
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -88,6 +99,10 @@
     "menu": {
       "title": "Menu — NOA Matcha Café",
       "description": "Kompletní nápojový lístek NOA Matcha: Classic a Signature matcha nápoje, ovocné variace i klasická káva. Ceny v Kč, Praha 1."
+    },
+    "gallery": {
+      "title": "Galerie — NOA Matcha Café",
+      "description": "Podívejte se do kavárny NOA Matcha — ceremoniální matcha, latte art, interiér a atmosféra v srdci Prahy."
     },
     "about": {
       "title": "O nás — NOA Matcha Café",

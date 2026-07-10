@@ -117,6 +117,7 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
   const m = getMessages(locale);
   const label: Record<Exclude<PageKey, 'home'>, string> = {
     menu: m.navMenu,
+    gallery: m.navGallery,
     about: m.navAbout,
     contact: m.navContact,
   };

@@ -1,8 +1,19 @@
 {
   "navHome": "Home",
   "navMenu": "Menu",
+  "navGallery": "Gallery",
   "navAbout": "About",
   "navContact": "Contact",
+  "galleryH": "Gallery",
+  "galleryLead": "Take a look inside — matcha, craft and calm in every detail.",
+  "ga1": "A cup of ceremonial matcha with a bamboo chasen",
+  "ga2": "Ceremonial matcha powder and a bamboo whisk",
+  "ga3": "Matcha latte with decorated foam",
+  "ga4": "Latte art in a cup on a wooden table",
+  "ga5": "Close-up of a coffee cup at NOA café",
+  "ga6": "Interior of NOA café in natural light",
+  "ga7": "Freshly prepared drink at the bar",
+  "ga8": "A morning cup by the café window",
   "heroTag": "Premium café with ceremonial matcha from Japan",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -88,6 +99,10 @@
     "menu": {
       "title": "Menu — NOA Matcha Café",
       "description": "The full NOA Matcha drinks list: Classic and Signature matcha drinks, fruity variations and classic coffee. Prices in CZK, Prague 1."
+    },
+    "gallery": {
+      "title": "Gallery — NOA Matcha Café",
+      "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere in the heart of Prague."
     },
     "about": {
       "title": "About — NOA Matcha Café",

@@ -5,18 +5,18 @@ export const locales = ['cs', 'en'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'cs';
 
-export type PageKey = 'home' | 'menu' | 'about' | 'contact';
+export type PageKey = 'home' | 'menu' | 'gallery' | 'about' | 'contact';
 
 // Lokalizované slugy. Prázdný slug = domovská stránka /[locale].
 export const slugForPage: Record<Locale, Record<PageKey, string>> = {
-  cs: { home: '', menu: 'menu', about: 'o-nas', contact: 'kontakt' },
-  en: { home: '', menu: 'menu', about: 'about', contact: 'contact' },
+  cs: { home: '', menu: 'menu', gallery: 'galerie', about: 'o-nas', contact: 'kontakt' },
+  en: { home: '', menu: 'menu', gallery: 'gallery', about: 'about', contact: 'contact' },
 };
 
 // Reverzní mapa slug -> PageKey pro daný jazyk (bez domovské stránky).
 export const pageForSlug: Record<Locale, Record<string, PageKey>> = {
-  cs: { menu: 'menu', 'o-nas': 'about', kontakt: 'contact' },
-  en: { menu: 'menu', about: 'about', contact: 'contact' },
+  cs: { menu: 'menu', galerie: 'gallery', 'o-nas': 'about', kontakt: 'contact' },
+  en: { menu: 'menu', gallery: 'gallery', about: 'about', contact: 'contact' },
 };
 
 export function isLocale(value: string): value is Locale {
