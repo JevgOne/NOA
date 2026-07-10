@@ -30,4 +30,11 @@ export const business = {
   aggregateRating: { ratingValue: 4.9, reviewCount: 127 },
 } as const;
 
+// Placeholder odkazy na sociální sítě — doplň reálné profily.
+export const social = {
+  instagram: 'https://instagram.com/',
+  instagramHandle: '@noamatcha',
+  facebook: 'https://facebook.com/',
+} as const;
+
 export const OG_IMAGE = '/og.png';

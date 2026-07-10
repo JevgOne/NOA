@@ -30,7 +30,6 @@ export default function Enhance() {
 
     // ---- hero parallax ----
     const heroInner = document.getElementById('heroInner');
-    const leaves = Array.from(document.querySelectorAll<HTMLElement>('.hero-leaf'));
     const cue = document.querySelector<HTMLElement>('.scroll-cue');
     let ticking = false;
     let onScroll: (() => void) | undefined;
@@ -45,9 +44,6 @@ export default function Enhance() {
           if (y < vh) {
             heroInner.style.transform = `translateY(${-y * 0.15}px)`;
             heroInner.style.opacity = String(Math.max(0, 1 - y / (vh * 0.6)));
-            leaves.forEach((lf, i) => {
-              lf.style.transform = `translateY(${y * (i ? 0.08 : -0.1)}px)` + (i ? ' rotate(160deg)' : '');
-            });
             if (cue) cue.style.opacity = String(Math.max(0, 1 - y / 200));
           }
           ticking = false;

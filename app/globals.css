@@ -66,10 +66,11 @@ main{padding:clamp(2rem,4vw,3rem) 0 clamp(3rem,7vw,5rem)}
 .scroll-cue svg{width:22px;height:22px;color:var(--green-soft);animation:bounce 2s infinite}
 @keyframes fadeIn{to{opacity:1}}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
-/* faint oversized leaf watermark drifting behind hero (parallax) */
-.hero-leaf{position:absolute;z-index:0;color:var(--green);opacity:.05;will-change:transform}
-.hero-leaf.a{width:min(60vw,560px);top:-6%;right:-8%}
-.hero-leaf.b{width:min(46vw,420px);bottom:-10%;left:-6%;transform:rotate(160deg)}
+
+/* faint oversized leaf watermark — zarovnané přesně na okraj (translateX na půl vlastní šířky) */
+.hero-leaf{position:absolute;z-index:0;color:var(--green);opacity:.05;pointer-events:none}
+.hero-leaf.a{width:min(60vw,560px);top:-6%;right:0;transform:translateX(50%)}
+.hero-leaf.b{width:min(46vw,420px);bottom:-10%;left:0;transform:translateX(-50%) rotate(160deg)}
 
 /* reveal on scroll — progressive enhancement: viditelné bez JS, skryje se jen s .js */
 .reveal{opacity:1;transform:none}
@@ -213,11 +214,11 @@ main{padding:clamp(2rem,4vw,3rem) 0 clamp(3rem,7vw,5rem)}
 .crumbs [aria-current="page"]{color:var(--wine)}
 
 /* ---- Open status badge ---- */
-.open-status{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-cinzel);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.66rem;color:var(--green)}
-.open-status .dot{width:8px;height:8px;border-radius:50%;background:var(--wine);flex-shrink:0}
+.open-status{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--font-cinzel);font-weight:500;letter-spacing:.13em;text-transform:uppercase;font-size:.82rem;line-height:1;color:var(--green)}
+.open-status .dot{width:9px;height:9px;border-radius:50%;background:var(--wine);flex-shrink:0}
 .open-status[data-open="true"] .dot{background:#5C8A34;animation:pulse 2.4s infinite}
-.open-status .os-sep{opacity:.45}
-.open-status .os-detail{font-family:var(--font-garamond);font-style:italic;text-transform:none;letter-spacing:.01em;font-size:.84rem;opacity:.85}
+.open-status .os-sep{opacity:.4}
+.open-status .os-detail{font-family:var(--font-cinzel);font-weight:500;letter-spacing:.13em;text-transform:uppercase;font-size:.82rem;opacity:.7}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(92,138,52,.5)}70%{box-shadow:0 0 0 7px rgba(92,138,52,0)}100%{box-shadow:0 0 0 0 rgba(92,138,52,0)}}
 .hero-status{margin-top:1.6rem}
 
