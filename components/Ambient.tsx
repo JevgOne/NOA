@@ -11,13 +11,13 @@ export default function Ambient() {
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const n = 12;
+    const n = 16;
     const arr: Particle[] = Array.from({ length: n }, (_, i) => ({
-      left: (i * 8.3 + Math.random() * 7) % 100,
-      size: 7 + Math.random() * 9,
-      dur: 16 + Math.random() * 16,
+      left: (i * 6.2 + Math.random() * 6) % 100,
+      size: 9 + Math.random() * 11,
+      dur: 15 + Math.random() * 15,
       delay: -Math.random() * 34,
-      drift: (Math.random() * 2 - 1) * 44,
+      drift: (Math.random() * 2 - 1) * 48,
       rot: Math.random() * 360,
     }));
     setParticles(arr);
