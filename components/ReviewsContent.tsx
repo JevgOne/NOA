@@ -22,6 +22,15 @@ function Stars({ n }: { n: number }) {
   );
 }
 
+function initials(name: string): string {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase() ?? '')
+    .join('');
+}
+
 export default async function ReviewsContent({ locale }: { locale: Locale }) {
   const t = getT(locale);
   const [list, agg] = await Promise.all([getApprovedReviews(), getAggregate()]);
@@ -60,9 +69,13 @@ export default async function ReviewsContent({ locale }: { locale: Locale }) {
           <div className="review-list">
             {list.map((r) => (
               <figure key={r.id} className="review-card">
+                <span className="quote-mark" aria-hidden="true">&ldquo;</span>
                 <Stars n={r.rating} />
                 <blockquote>{r.body}</blockquote>
-                <figcaption>{r.author}</figcaption>
+                <figcaption>
+                  <span className="review-avatar" aria-hidden="true">{initials(r.author)}</span>
+                  <span className="review-name">{r.author}</span>
+                </figcaption>
               </figure>
             ))}
           </div>

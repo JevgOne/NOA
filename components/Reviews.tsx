@@ -18,6 +18,15 @@ function Stars({ n }: { n: number }) {
   );
 }
 
+function initials(name: string): string {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0]?.toUpperCase() ?? '')
+    .join('');
+}
+
 // Home sekce: pár nejnovějších schválených recenzí + odkaz na celou stránku.
 export default async function Reviews({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -45,7 +54,10 @@ export default async function Reviews({ locale }: { locale: Locale }) {
           <figure key={r.id} className="review-card">
             <Stars n={r.rating} />
             <blockquote>{r.body}</blockquote>
-            <figcaption>{r.author}</figcaption>
+            <figcaption>
+              <span className="review-avatar" aria-hidden="true">{initials(r.author)}</span>
+              <span className="review-name">{r.author}</span>
+            </figcaption>
           </figure>
         ))}
       </div>
