@@ -59,6 +59,8 @@
   "lpCtaContact": "Find us",
   "lpLatteCrumb": "Matcha Latte",
   "lpZizkovCrumb": "Café in Žižkov",
+  "lpCeremonialCrumb": "Ceremonial matcha",
+  "lpTogoCrumb": "Matcha to go",
   "landing": {
     "latte": {
       "h1": "Matcha Latte in Prague",
@@ -85,6 +87,32 @@
         { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00. Open every day." }
       ],
       "ogHeading": "Matcha café, Prague 3"
+    },
+    "ceremonial": {
+      "h1": "Ceremonial matcha",
+      "lead": "The highest grade of matcha from the first spring harvest — at NOA café in Žižkov.",
+      "body": [
+        "What is ceremonial matcha and why does it matter? Ceremonial grade matcha is the finest, highest-quality grade of green tea matcha. The leaves are shaded for weeks before harvest, hand-picked at the first spring harvest and stone-milled into a silky-fine powder. The result is a vivid green color, natural sweetness and no bitterness."
+      ],
+      "sections": [
+        { "h": "How it differs from regular matcha", "p": "Culinary matcha is cheaper, coarser and more bitter — great for baking. Ceremonial matcha is meant to be sipped on its own or in a latte, because its flavor is smooth and full. We use ceremonial grade only." },
+        { "h": "How we prepare it", "p": "Every cup is hand-whisked with a bamboo chasen into a fluffy foam — hot or iced. Have it as pure usucha or as a creamy matcha latte." },
+        { "h": "Where to try it", "p": "Come to Husitská 55, Prague 3 – Žižkov. Open every day." }
+      ],
+      "ogHeading": "Ceremonial matcha"
+    },
+    "togo": {
+      "h1": "Matcha to go",
+      "lead": "Your favorite matcha to go — fast, with no compromise on quality.",
+      "body": [
+        "In a hurry? Grab your matcha and coffee to go. We'll make a fresh matcha latte from ceremonial matcha in a takeaway cup — hot or iced — in no time. Same quality as at the bar."
+      ],
+      "sections": [
+        { "h": "What you can grab", "p": "Matcha latte (hot / iced), fruity and signature matcha drinks and classic coffee. All freshly made to order." },
+        { "h": "Where to pick it up", "p": "Drop by Husitská 55, Prague 3 – Žižkov. A short walk from the Husinecká tram stop and the Main Train Station — perfect on your way to work or a walk." },
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
+      ],
+      "ogHeading": "Matcha to go"
     }
   },
   "heroTag": "Premium café with ceremonial matcha from Japan",
@@ -196,6 +224,14 @@
     "lpZizkov": {
       "title": "Café in Žižkov — NOA Matcha Café, Prague 3",
       "description": "Matcha café in Žižkov. Ceremonial matcha latte and premium coffee at Husitská 55, Prague 3. Open every day. Drop by for a cup."
+    },
+    "lpCeremonial": {
+      "title": "Ceremonial matcha — NOA Matcha Café, Prague 3",
+      "description": "What is ceremonial matcha? The highest grade of green tea from Japan, hand-whisked with a bamboo chasen. Try it at NOA Matcha Café, Husitská 55, Prague 3 – Žižkov."
+    },
+    "lpTogo": {
+      "title": "Matcha to go — NOA Matcha Café, Prague 3 (Žižkov)",
+      "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Husitská 55, Prague 3 – Žižkov. Open every day."
     }
   }
 }

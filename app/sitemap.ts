@@ -2,7 +2,10 @@ import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/site';
 import { locales, type PageKey, pathFor, languageAlternates } from '@/lib/i18n';
 
-const pages: PageKey[] = ['home', 'menu', 'gallery', 'reviews', 'about', 'contact', 'lpLatte', 'lpZizkov'];
+const pages: PageKey[] = [
+  'home', 'menu', 'gallery', 'reviews', 'about', 'contact',
+  'lpLatte', 'lpZizkov', 'lpCeremonial', 'lpTogo',
+];
 
 const priorityFor: Partial<Record<PageKey, number>> = { home: 1, menu: 0.9, reviews: 0.8, contact: 0.8 };
 

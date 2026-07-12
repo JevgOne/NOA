@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { type Locale, getT, pathFor } from '@/lib/i18n';
+import { type Locale, getT, pathFor, landingPages } from '@/lib/i18n';
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -23,9 +23,12 @@ export default function Footer({ locale }: { locale: Locale }) {
         ))}
       </nav>
       <nav className="foot-sub" aria-label={locale === 'cs' ? 'Oblíbené' : 'Popular'}>
-        <Link href={pathFor(locale, 'lpLatte')}>{t('lpLatteCrumb')}</Link>
-        <span aria-hidden="true">·</span>
-        <Link href={pathFor(locale, 'lpZizkov')}>{t('lpZizkovCrumb')}</Link>
+        {landingPages.map((key, i) => (
+          <span key={key} style={{ display: 'contents' }}>
+            {i > 0 && <span aria-hidden="true">·</span>}
+            <Link href={pathFor(locale, key)}>{t(`${key}Crumb`)}</Link>
+          </span>
+        ))}
       </nav>
       <div className="fc">© 2026 · Praha 3, Žižkov</div>
     </footer>

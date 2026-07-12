@@ -59,6 +59,8 @@
   "lpCtaContact": "Kde nás najdete",
   "lpLatteCrumb": "Matcha Latte",
   "lpZizkovCrumb": "Kavárna Žižkov",
+  "lpCeremonialCrumb": "Ceremoniální matcha",
+  "lpTogoCrumb": "Matcha s sebou",
   "landing": {
     "latte": {
       "h1": "Matcha Latte v Praze",
@@ -85,6 +87,32 @@
         { "h": "Otevírací doba", "p": "Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00. Otevřeno každý den." }
       ],
       "ogHeading": "Matcha kavárna, Praha 3"
+    },
+    "ceremonial": {
+      "h1": "Ceremoniální matcha",
+      "lead": "Nejvyšší kvalita matchy z prvního jarního sběru — v kavárně NOA na Žižkově.",
+      "body": [
+        "Co je ceremoniální matcha a proč na ní záleží? Ceremoniální matcha (ceremonial grade) je nejjemnější a nejkvalitnější stupeň zeleného čaje matcha. Listy se týdny před sklizní stíní, ručně sbírají při prvním jarním sběru a melou na kamenných mlýncích na hedvábně jemný prášek. Výsledkem je sytě zelená barva, přirozená sladkost a žádná hořkost."
+      ],
+      "sections": [
+        { "h": "Čím se liší od běžné matchy", "p": "Kulinární (culinary) matcha je levnější, hrubší a hořčí — hodí se do pečení. Ceremoniální matcha se pije samotná nebo v latte, protože její chuť je jemná a plná. My používáme výhradně ceremoniální kvalitu." },
+        { "h": "Jak ji připravujeme", "p": "Každý šálek ručně šleháme bambusovým chasenem do nadýchané pěny — teplé i ledové. Dáte si ji jako čisté usu-cha, nebo jako krémové matcha latte." },
+        { "h": "Kde ceremoniální matchu ochutnáte", "p": "Přijďte na Husitskou 55, Praha 3 – Žižkov. Otevřeno každý den." }
+      ],
+      "ogHeading": "Ceremoniální matcha"
+    },
+    "togo": {
+      "h1": "Matcha s sebou",
+      "lead": "Vaše oblíbená matcha take-away — rychle, ale bez kompromisů v kvalitě.",
+      "body": [
+        "Spěcháte? Matchu i kávu si u nás dáte s sebou (take-away). Připravíme vám čerstvé matcha latte z ceremoniální matchy do kelímku na cestu — teplé i ledové — během chvíle. Kvalita zůstává stejná jako u nás na baru."
+      ],
+      "sections": [
+        { "h": "Co si dáte s sebou", "p": "Matcha latte (hot / iced), ovocné a signature matcha nápoje i klasickou kávu. Vše čerstvě připravené na počkání." },
+        { "h": "Kde si vyzvednete", "p": "Stavte se na Husitské 55, Praha 3 – Žižkov. Kousek od zastávky Husinecká a Hlavního nádraží — ideální cestou do práce i na procházku." },
+        { "h": "Otevírací doba", "p": "Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00." }
+      ],
+      "ogHeading": "Matcha s sebou"
     }
   },
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
@@ -196,6 +224,14 @@
     "lpZizkov": {
       "title": "Kavárna Žižkov — matcha kavárna NOA, Praha 3",
       "description": "Matcha kavárna na Žižkově. Ceremoniální matcha latte i prémiová káva na Husitské 55, Praha 3. Otevřeno každý den. Zastavte se na šálek."
+    },
+    "lpCeremonial": {
+      "title": "Ceremoniální matcha — NOA Matcha Café, Praha 3",
+      "description": "Co je ceremoniální matcha? Nejvyšší kvalita zeleného čaje z Japonska, ručně šlehaná bambusovým chasenem. Ochutnejte v NOA Matcha Café, Husitská 55, Praha 3 – Žižkov."
+    },
+    "lpTogo": {
+      "title": "Matcha s sebou — NOA Matcha Café, Praha 3 (Žižkov)",
+      "description": "Matcha latte a káva s sebou (take-away) z ceremoniální matchy. Rychle a čerstvě. Husitská 55, Praha 3 – Žižkov. Otevřeno každý den."
     }
   }
 }

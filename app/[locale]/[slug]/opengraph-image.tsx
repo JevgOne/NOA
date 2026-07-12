@@ -16,6 +16,8 @@ function headingFor(locale: Locale, page: PageKey): string {
     contact: m.navContact,
     lpLatte: m.landing.latte.ogHeading,
     lpZizkov: m.landing.zizkov.ogHeading,
+    lpCeremonial: m.landing.ceremonial.ogHeading,
+    lpTogo: m.landing.togo.ogHeading,
   };
   return map[page] ?? m.seo.siteName;
 }

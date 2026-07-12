@@ -13,17 +13,21 @@ export type PageKey =
   | 'about'
   | 'contact'
   | 'lpLatte'
-  | 'lpZizkov';
+  | 'lpZizkov'
+  | 'lpCeremonial'
+  | 'lpTogo';
 
 // Lokalizované slugy. Prázdný slug = domovská stránka /[locale].
 export const slugForPage: Record<Locale, Record<PageKey, string>> = {
   cs: {
     home: '', menu: 'menu', gallery: 'galerie', reviews: 'recenze', about: 'o-nas', contact: 'kontakt',
     lpLatte: 'matcha-latte-praha', lpZizkov: 'kavarna-zizkov',
+    lpCeremonial: 'ceremonialni-matcha', lpTogo: 'matcha-s-sebou',
   },
   en: {
     home: '', menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
     lpLatte: 'matcha-latte-prague', lpZizkov: 'cafe-zizkov',
+    lpCeremonial: 'ceremonial-matcha', lpTogo: 'matcha-to-go',
   },
 };
 
@@ -32,15 +36,17 @@ export const pageForSlug: Record<Locale, Record<string, PageKey>> = {
   cs: {
     menu: 'menu', galerie: 'gallery', recenze: 'reviews', 'o-nas': 'about', kontakt: 'contact',
     'matcha-latte-praha': 'lpLatte', 'kavarna-zizkov': 'lpZizkov',
+    'ceremonialni-matcha': 'lpCeremonial', 'matcha-s-sebou': 'lpTogo',
   },
   en: {
     menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
     'matcha-latte-prague': 'lpLatte', 'cafe-zizkov': 'lpZizkov',
+    'ceremonial-matcha': 'lpCeremonial', 'matcha-to-go': 'lpTogo',
   },
 };
 
 // Landing pages (SEO) — pro sitemap a prolinkování.
-export const landingPages: PageKey[] = ['lpLatte', 'lpZizkov'];
+export const landingPages: PageKey[] = ['lpLatte', 'lpZizkov', 'lpCeremonial', 'lpTogo'];
 
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
