@@ -1,7 +1,7 @@
 // Central business/site config — single source of truth for SEO + structured data.
 // Kontaktní údaje jsou zatím PLACEHOLDER (viz README) — až přijdou reálné, změň zde.
 
-export const SITE_URL = 'https://noamatcha.cz';
+export const SITE_URL = 'https://www.noamatcha.cz';
 
 export const business = {
   name: 'NOA Matcha Café',
