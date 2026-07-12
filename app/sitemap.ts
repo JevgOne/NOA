@@ -1,6 +1,9 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/lib/site';
 import { locales, type PageKey, pathFor, languageAlternates } from '@/lib/i18n';
+import { galleryPhotos, photoUrl } from '@/lib/gallery';
+
+const galleryImages = galleryPhotos.map((p) => photoUrl(p.id, 1200));
 
 const pages: PageKey[] = [
   'home', 'menu', 'gallery', 'reviews', 'about', 'contact',
@@ -20,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency: page === 'reviews' ? 'weekly' : 'monthly',
         priority: priorityFor[page] ?? 0.7,
+        ...(page === 'gallery' ? { images: galleryImages } : {}),
         alternates: {
           languages: {
             cs: `${SITE_URL}${langs.cs}`,

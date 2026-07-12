@@ -120,7 +120,25 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     hasMap: `https://www.google.com/maps?q=${encodeURIComponent(`${business.street}, ${business.postalCode} ${business.city}`)}`,
     areaServed: { '@type': 'City', name: 'Praha' },
     keywords: keywords[locale].join(', '),
-    sameAs: [social.instagram, social.facebook].filter(Boolean),
+    ...(realSocialLinks().length ? { sameAs: realSocialLinks() } : {}),
+  };
+}
+
+// Jen reálné profily (ne placeholder holé domény) — neposílat Googlu neplatný sameAs.
+function realSocialLinks(): string[] {
+  return [social.instagram, social.facebook].filter((u) => /(?:instagram|facebook)\.com\/.+/.test(u));
+}
+
+// WebSite entita — propojuje web s provozovnou (publisher = #cafe).
+export function websiteSchema(locale: Locale): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: business.name,
+    inLanguage: locale,
+    publisher: { '@id': `${SITE_URL}/#cafe` },
   };
 }
 

@@ -4,7 +4,7 @@ import { Cinzel, EB_Garamond } from 'next/font/google';
 import '@/app/globals.css';
 import { locales, isLocale, type Locale, getT } from '@/lib/i18n';
 import { SITE_URL } from '@/lib/site';
-import { cafeSchema } from '@/lib/seo';
+import { cafeSchema, websiteSchema } from '@/lib/seo';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import Enhance from '@/components/Enhance';
@@ -28,6 +28,10 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // Google Search Console: nastav env GOOGLE_SITE_VERIFICATION a ověření se přidá samo.
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };
 
 export const viewport: Viewport = {
@@ -72,6 +76,7 @@ export default async function LocaleLayout({
         </div>
         <Enhance />
         <JsonLd data={cafeSchema(l)} />
+        <JsonLd data={websiteSchema(l)} />
       </body>
     </html>
   );
