@@ -31,6 +31,10 @@ export default function Footer({ locale }: { locale: Locale }) {
         ))}
       </nav>
       <div className="fc">© 2026 · Praha 3, Žižkov</div>
+      <div className="foot-credit">
+        {locale === 'cs' ? 'Web vytvořil ' : 'Website by '}
+        <a href="https://www.weblyx.cz" target="_blank" rel="noopener noreferrer">Weblyx</a>
+      </div>
     </footer>
   );
 }
