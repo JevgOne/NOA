@@ -11,7 +11,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         <path d="M50 5C25 25 15 55 15 78c0 22 15 37 35 37 0-40 0-70 0-110Z" />
       </svg>
       <div className="hero-inner" id="heroInner">
-        <h1 className="h-logo">NOA</h1>
+        <h1 className="h-logo">NOA<span className="sr-only"> {t('h1Suffix')}</span></h1>
         <div className="h-sub">MATCHA</div>
         <div className="h-cafe">{t('heroCafe')}</div>
         <div className="h-tag">{t('heroTag')}</div>

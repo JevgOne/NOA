@@ -116,6 +116,7 @@
     }
   },
   "heroTag": "Premium café with ceremonial matcha from Japan",
+  "h1Suffix": "Matcha Café — matcha café, Prague 3 (Žižkov)",
   "heroCafe": "Café",
   "scrollCue": "Menu",
   "cafeEy": "Our café",
@@ -195,7 +196,7 @@
     "ogAlt": "NOA Matcha Café — premium matcha in Prague 3, Žižkov",
     "home": {
       "title": "NOA Matcha Café — Premium matcha in Prague 3, Žižkov",
-      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte, fruity and signature drinks and classic coffee at Husitská 55, Prague 3 – Žižkov. Open every day."
+      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte and signature drinks at Husitská 55, Prague 3 – Žižkov. Open every day."
     },
     "menu": {
       "title": "Menu & prices — NOA Matcha Café Prague 3",
@@ -227,7 +228,7 @@
     },
     "lpCeremonial": {
       "title": "Ceremonial matcha — NOA Matcha Café, Prague 3",
-      "description": "What is ceremonial matcha? The highest grade of green tea from Japan, hand-whisked with a bamboo chasen. Try it at NOA Matcha Café, Husitská 55, Prague 3 – Žižkov."
+      "description": "What is ceremonial matcha? The highest grade of green tea from Japan, hand-whisked. Try it at NOA Matcha Café, Husitská 55, Prague 3."
     },
     "lpTogo": {
       "title": "Matcha to go — NOA Matcha Café, Prague 3 (Žižkov)",

@@ -116,6 +116,7 @@
     }
   },
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
+  "h1Suffix": "Matcha Café — matcha kavárna, Praha 3 (Žižkov)",
   "heroCafe": "Café",
   "scrollCue": "Menu",
   "cafeEy": "Naše kavárna",
@@ -195,7 +196,7 @@
     "ogAlt": "NOA Matcha Café — prémiová matcha v Praze 3, Žižkov",
     "home": {
       "title": "NOA Matcha Café — Prémiová matcha v Praze 3, Žižkov",
-      "description": "Prémiová matcha kavárna s ceremoniální matchou z Japonska. Matcha latte, ovocné a signature nápoje i klasická káva na Husitské 55, Praha 3 – Žižkov. Otevřeno každý den."
+      "description": "Prémiová matcha kavárna s ceremoniální matchou z Japonska. Matcha latte i signature nápoje na Husitské 55, Praha 3 – Žižkov. Otevřeno denně."
     },
     "menu": {
       "title": "Menu a ceny — NOA Matcha Café Praha 3",
@@ -227,7 +228,7 @@
     },
     "lpCeremonial": {
       "title": "Ceremoniální matcha — NOA Matcha Café, Praha 3",
-      "description": "Co je ceremoniální matcha? Nejvyšší kvalita zeleného čaje z Japonska, ručně šlehaná bambusovým chasenem. Ochutnejte v NOA Matcha Café, Husitská 55, Praha 3 – Žižkov."
+      "description": "Co je ceremoniální matcha? Nejvyšší kvalita zeleného čaje z Japonska, ručně šlehaná. Ochutnejte v NOA Matcha Café, Husitská 55, Praha 3."
     },
     "lpTogo": {
       "title": "Matcha s sebou — NOA Matcha Café, Praha 3 (Žižkov)",

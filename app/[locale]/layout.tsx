@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
 import { Cinzel, EB_Garamond } from 'next/font/google';
 import '@/app/globals.css';
@@ -28,6 +28,11 @@ const garamond = EB_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+};
+
+export const viewport: Viewport = {
+  themeColor: '#33401F',
+  colorScheme: 'light',
 };
 
 // dynamicParams=true kvůli on-demand revalidaci home po schválení recenze.
