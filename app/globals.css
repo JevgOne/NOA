@@ -322,6 +322,15 @@ main{padding:clamp(2rem,4vw,3rem) 0 clamp(3rem,7vw,5rem)}
 .insta-cta{display:flex;justify-content:center;margin-top:1.5rem}
 @media(max-width:820px){.insta-grid{grid-template-columns:repeat(3,1fr)}}
 
+/* ---- Landing pages ---- */
+.lp-prose{max-width:64ch}
+.lp-sections{max-width:64ch;margin:clamp(2rem,5vw,3rem) auto 0;text-align:center}
+.lp-section{margin-bottom:clamp(1.8rem,4vw,2.4rem)}
+.lp-section h2{font-family:var(--font-cinzel);font-weight:600;color:var(--green);letter-spacing:.08em;text-transform:uppercase;font-size:clamp(1.1rem,2.6vw,1.4rem);margin-bottom:.7rem}
+.lp-section p{font-size:1.05rem;color:var(--ink);line-height:1.6}
+.lp-cta{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;justify-content:center;align-items:center;margin-top:clamp(2rem,5vw,3rem)}
+.lp-cta .reserve-cta{cursor:pointer}
+
 /* ---- FAQ ---- */
 .faq{max-width:760px;margin:clamp(2.5rem,6vw,3.5rem) auto 0}
 .faq-list{border-top:1px solid var(--rule-soft)}
@@ -338,6 +347,10 @@ footer.site .fb{font-family:var(--font-cinzel);font-weight:600;color:var(--green
 footer.site .foot-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.4rem;margin-top:1.2rem}
 footer.site .foot-nav a{font-family:var(--font-cinzel);font-weight:500;color:var(--green);letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;text-decoration:none;transition:color .2s}
 footer.site .foot-nav a:hover{color:var(--wine)}
+footer.site .foot-sub{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.4rem .7rem;margin-top:.8rem}
+footer.site .foot-sub a{font-family:var(--font-cinzel);font-weight:400;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-size:.62rem;text-decoration:none;transition:color .2s}
+footer.site .foot-sub a:hover{color:var(--wine)}
+footer.site .foot-sub span{color:var(--rule)}
 footer.site .fc{font-family:var(--font-cinzel);font-weight:400;letter-spacing:.1em;text-transform:uppercase;font-size:.66rem;color:var(--ink);margin-top:1.2rem}
 
 @media(max-width:820px){

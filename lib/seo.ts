@@ -190,6 +190,8 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
     reviews: m.navReviews,
     about: m.navAbout,
     contact: m.navContact,
+    lpLatte: m.lpLatteCrumb,
+    lpZizkov: m.lpZizkovCrumb,
   };
   return {
     '@context': 'https://schema.org',

@@ -55,6 +55,38 @@
     { "q": "Can I reserve a table?", "a": "Yes, you can reserve a table by phone — find the contact on the Contact page." },
     { "q": "What are your opening hours?", "a": "We're open every day: Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
   ],
+  "lpCtaMenu": "View menu & prices",
+  "lpCtaContact": "Find us",
+  "lpLatteCrumb": "Matcha Latte",
+  "lpZizkovCrumb": "Café in Žižkov",
+  "landing": {
+    "latte": {
+      "h1": "Matcha Latte in Prague",
+      "lead": "Creamy matcha latte made with ceremonial matcha from Japan — at NOA café in Žižkov.",
+      "body": [
+        "Looking for the best matcha latte in Prague? At NOA Matcha Café we make our matcha latte from premium ceremonial matcha, hand-whisked with a bamboo chasen into a silky foam. No pouch powder, no bitterness — just a rich, natural taste."
+      ],
+      "sections": [
+        { "h": "How we make our matcha latte", "p": "Every latte is freshly whisked from ceremonial matcha and topped with the milk of your choice. Have it hot or iced — just the way you like it." },
+        { "h": "Fruity and signature variations", "p": "Besides the classic matcha latte we offer fruity variations — apricot, raspberry, strawberry — and signature drinks like Coconut Cloud or Maple Sea Salt. See the full menu and prices." },
+        { "h": "Where to try it", "p": "Find us at Husitská 55, Prague 3 – Žižkov. Open every day. Drop by for a cup of premium matcha." }
+      ],
+      "ogHeading": "Matcha Latte in Prague"
+    },
+    "zizkov": {
+      "h1": "Matcha café in Žižkov",
+      "lead": "NOA Matcha Café — matcha and premium coffee at Husitská 55, Prague 3 (Žižkov).",
+      "body": [
+        "Looking for a calm café in Žižkov? NOA Matcha Café is a spot in the heart of Prague 3 where ceremonial matcha from Japan is the star — but you'll also find great espresso here. Sit down, slow down and enjoy a cup in a pleasant atmosphere."
+      ],
+      "sections": [
+        { "h": "What we offer", "p": "Ceremonial matcha latte (hot or iced), fruity and signature matcha drinks, classic coffee (espresso, cappuccino, flat white, latte) and a calm place to sit." },
+        { "h": "Where to find us", "p": "Husitská 55, 130 00 Prague 3 – Žižkov. The nearest tram stop is Husinecká, a short walk from the Main Train Station." },
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00. Open every day." }
+      ],
+      "ogHeading": "Matcha café, Prague 3"
+    }
+  },
   "heroTag": "Premium café with ceremonial matcha from Japan",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -156,6 +188,14 @@
     "contact": {
       "title": "Contact — NOA Matcha Café Prague 3, Žižkov",
       "description": "Find us at Husitská 55, 130 00 Prague 3 (Žižkov). Opening hours, phone, e-mail and map for NOA Matcha café. Drop by for a cup of matcha."
+    },
+    "lpLatte": {
+      "title": "Matcha Latte Prague — NOA Matcha Café, Žižkov",
+      "description": "Creamy matcha latte made with ceremonial matcha from Japan. Hot or iced, fruity and signature variations. NOA Matcha Café, Husitská 55, Prague 3 – Žižkov."
+    },
+    "lpZizkov": {
+      "title": "Café in Žižkov — NOA Matcha Café, Prague 3",
+      "description": "Matcha café in Žižkov. Ceremonial matcha latte and premium coffee at Husitská 55, Prague 3. Open every day. Drop by for a cup."
     }
   }
 }

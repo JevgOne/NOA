@@ -8,6 +8,7 @@ import GalleryContent from '@/components/GalleryContent';
 import ReviewsContent from '@/components/ReviewsContent';
 import AboutContent from '@/components/AboutContent';
 import ContactContent from '@/components/ContactContent';
+import LandingContent from '@/components/LandingContent';
 
 // dynamicParams=true: umožní on-demand revalidaci (schválení recenze) bez NoFallbackError.
 // Neplatné slugy stále vrací 404 přes notFound() guard níže.
@@ -52,6 +53,8 @@ export default async function SlugPage({
     reviews: t('navReviews'),
     about: t('navAbout'),
     contact: t('navContact'),
+    lpLatte: t('lpLatteCrumb'),
+    lpZizkov: t('lpZizkovCrumb'),
   };
 
   return (
@@ -62,6 +65,8 @@ export default async function SlugPage({
       {page === 'reviews' && <ReviewsContent locale={l} />}
       {page === 'about' && <AboutContent locale={l} />}
       {page === 'contact' && <ContactContent locale={l} />}
+      {page === 'lpLatte' && <LandingContent locale={l} landingKey="latte" />}
+      {page === 'lpZizkov' && <LandingContent locale={l} landingKey="zizkov" />}
     </>
   );
 }

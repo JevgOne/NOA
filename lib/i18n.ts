@@ -5,19 +5,42 @@ export const locales = ['cs', 'en'] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = 'cs';
 
-export type PageKey = 'home' | 'menu' | 'gallery' | 'reviews' | 'about' | 'contact';
+export type PageKey =
+  | 'home'
+  | 'menu'
+  | 'gallery'
+  | 'reviews'
+  | 'about'
+  | 'contact'
+  | 'lpLatte'
+  | 'lpZizkov';
 
 // Lokalizované slugy. Prázdný slug = domovská stránka /[locale].
 export const slugForPage: Record<Locale, Record<PageKey, string>> = {
-  cs: { home: '', menu: 'menu', gallery: 'galerie', reviews: 'recenze', about: 'o-nas', contact: 'kontakt' },
-  en: { home: '', menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact' },
+  cs: {
+    home: '', menu: 'menu', gallery: 'galerie', reviews: 'recenze', about: 'o-nas', contact: 'kontakt',
+    lpLatte: 'matcha-latte-praha', lpZizkov: 'kavarna-zizkov',
+  },
+  en: {
+    home: '', menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
+    lpLatte: 'matcha-latte-prague', lpZizkov: 'cafe-zizkov',
+  },
 };
 
 // Reverzní mapa slug -> PageKey pro daný jazyk (bez domovské stránky).
 export const pageForSlug: Record<Locale, Record<string, PageKey>> = {
-  cs: { menu: 'menu', galerie: 'gallery', recenze: 'reviews', 'o-nas': 'about', kontakt: 'contact' },
-  en: { menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact' },
+  cs: {
+    menu: 'menu', galerie: 'gallery', recenze: 'reviews', 'o-nas': 'about', kontakt: 'contact',
+    'matcha-latte-praha': 'lpLatte', 'kavarna-zizkov': 'lpZizkov',
+  },
+  en: {
+    menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
+    'matcha-latte-prague': 'lpLatte', 'cafe-zizkov': 'lpZizkov',
+  },
 };
+
+// Landing pages (SEO) — pro sitemap a prolinkování.
+export const landingPages: PageKey[] = ['lpLatte', 'lpZizkov'];
 
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);

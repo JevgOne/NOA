@@ -55,6 +55,38 @@
     { "q": "Dá se u vás rezervovat stůl?", "a": "Ano, stůl si můžete rezervovat telefonicky — kontakt najdete na stránce Kontakt." },
     { "q": "Jaká je otevírací doba?", "a": "Otevřeno máme každý den: Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00." }
   ],
+  "lpCtaMenu": "Zobrazit menu a ceny",
+  "lpCtaContact": "Kde nás najdete",
+  "lpLatteCrumb": "Matcha Latte",
+  "lpZizkovCrumb": "Kavárna Žižkov",
+  "landing": {
+    "latte": {
+      "h1": "Matcha Latte v Praze",
+      "lead": "Krémové matcha latte z ceremoniální matchy z Japonska — v kavárně NOA na Žižkově.",
+      "body": [
+        "Hledáte nejlepší matcha latte v Praze? V NOA Matcha Café připravujeme matcha latte z prémiové ceremoniální matchy, kterou ručně šleháme bambusovým chasenem do hedvábně jemné pěny. Žádný prášek z pytlíku, žádná hořkost — jen sytá, přírodní chuť."
+      ],
+      "sections": [
+        { "h": "Jak připravujeme matcha latte", "p": "Každé latte šleháme čerstvě z ceremoniální matchy a doplňujeme mlékem dle výběru. Dáte si ho teplé i ledové (hot / iced) — přesně jak máte rádi." },
+        { "h": "Ovocné a signature varianty", "p": "Kromě klasického matcha latte nabízíme ovocné variace — meruňka, malina, jahoda — i signature nápoje jako Coconut Cloud nebo Maple Sea Salt. Kompletní nabídku i ceny najdete v našem menu." },
+        { "h": "Kde matcha latte ochutnáte", "p": "Najdete nás na Husitské 55, Praha 3 – Žižkov. Otevřeno každý den. Zastavte se na šálek prémiové matchy." }
+      ],
+      "ogHeading": "Matcha Latte v Praze"
+    },
+    "zizkov": {
+      "h1": "Matcha kavárna na Žižkově",
+      "lead": "NOA Matcha Café — matcha i prémiová káva na Husitské 55, Praha 3 (Žižkov).",
+      "body": [
+        "Hledáte klidnou kavárnu na Žižkově? NOA Matcha Café je místo v srdci Prahy 3, kde je hlavní hvězdou ceremoniální matcha z Japonska — ale najdete u nás i skvělou espresso kávu. Posaďte se, zpomalte a vychutnejte si šálek v příjemné atmosféře."
+      ],
+      "sections": [
+        { "h": "Co u nás najdete", "p": "Ceremoniální matcha latte (teplé i ledové), ovocné a signature matcha nápoje, klasickou kávu (espresso, cappuccino, flat white, latte) a klid k posezení." },
+        { "h": "Kde nás najdete", "p": "Husitská 55, 130 00 Praha 3 – Žižkov. Nejbližší tramvajová zastávka je Husinecká, kousek od Hlavního nádraží." },
+        { "h": "Otevírací doba", "p": "Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00. Otevřeno každý den." }
+      ],
+      "ogHeading": "Matcha kavárna, Praha 3"
+    }
+  },
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
   "heroCafe": "Café",
   "scrollCue": "Menu",
@@ -156,6 +188,14 @@
     "contact": {
       "title": "Kontakt — NOA Matcha Café Praha 3, Žižkov",
       "description": "Najdete nás na Husitské 55, 130 00 Praha 3 (Žižkov). Otevírací doba, telefon, e-mail a mapa kavárny NOA Matcha. Zastavte se na šálek matchy."
+    },
+    "lpLatte": {
+      "title": "Matcha Latte Praha — NOA Matcha Café, Žižkov",
+      "description": "Krémové matcha latte z ceremoniální matchy z Japonska. Teplé i ledové, ovocné i signature varianty. NOA Matcha Café, Husitská 55, Praha 3 – Žižkov."
+    },
+    "lpZizkov": {
+      "title": "Kavárna Žižkov — matcha kavárna NOA, Praha 3",
+      "description": "Matcha kavárna na Žižkově. Ceremoniální matcha latte i prémiová káva na Husitské 55, Praha 3. Otevřeno každý den. Zastavte se na šálek."
     }
   }
 }

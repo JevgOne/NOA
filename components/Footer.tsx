@@ -22,7 +22,12 @@ export default function Footer({ locale }: { locale: Locale }) {
           </Link>
         ))}
       </nav>
-      <div className="fc">© 2026 · Praha</div>
+      <nav className="foot-sub" aria-label={locale === 'cs' ? 'Oblíbené' : 'Popular'}>
+        <Link href={pathFor(locale, 'lpLatte')}>{t('lpLatteCrumb')}</Link>
+        <span aria-hidden="true">·</span>
+        <Link href={pathFor(locale, 'lpZizkov')}>{t('lpZizkovCrumb')}</Link>
+      </nav>
+      <div className="fc">© 2026 · Praha 3, Žižkov</div>
     </footer>
   );
 }
