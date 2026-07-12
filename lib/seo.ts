@@ -212,6 +212,9 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
     lpZizkov: m.lpZizkovCrumb,
     lpCeremonial: m.lpCeremonialCrumb,
     lpTogo: m.lpTogoCrumb,
+    lpIced: m.lpIcedCrumb,
+    lpCatering: m.lpCateringCrumb,
+    lpRecipe: m.lpRecipeCrumb,
   };
   return {
     '@context': 'https://schema.org',

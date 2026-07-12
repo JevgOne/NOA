@@ -61,6 +61,9 @@
   "lpZizkovCrumb": "Kavárna Žižkov",
   "lpCeremonialCrumb": "Ceremoniální matcha",
   "lpTogoCrumb": "Matcha s sebou",
+  "lpIcedCrumb": "Ledová matcha",
+  "lpCateringCrumb": "Matcha catering",
+  "lpRecipeCrumb": "Matcha latte recept",
   "landing": {
     "latte": {
       "h1": "Matcha Latte v Praze",
@@ -113,6 +116,45 @@
         { "h": "Otevírací doba", "p": "Po–Pá 8:00–20:00, So 9:00–20:00, Ne 9:00–18:00." }
       ],
       "ogHeading": "Matcha s sebou"
+    },
+    "iced": {
+      "h1": "Ledová matcha",
+      "lead": "Osvěžující iced matcha z ceremoniální matchy — ideální na horké dny.",
+      "body": [
+        "Ledová matcha (iced matcha latte) je svěží, chladivá verze naší prémiové matchy. Ceremoniální matchu ušleháme, přelijeme ledem a mlékem nebo rostlinnou alternativou — výsledkem je osvěžující nápoj se sytou barvou a přírodní sladkostí, bez hořkosti."
+      ],
+      "sections": [
+        { "h": "Ledové varianty", "p": "Klasické iced matcha latte, ovocné (meruňka, malina, jahoda) i signature Coconut Cloud s nadýchanou pěnou. Vše z ceremoniální matchy." },
+        { "h": "Proč ledová matcha", "p": "Přirozená energie z L-theaninu a kofeinu bez nervozity, méně cukru než limonády a sytá chuť i s ledem. Skvělá alternativa k ledové kávě." },
+        { "h": "Kde ji dáte", "p": "Husitská 55, Praha 3 – Žižkov. Otevřeno každý den, na místě i s sebou." }
+      ],
+      "ogHeading": "Ledová matcha"
+    },
+    "catering": {
+      "h1": "Matcha catering & firemní akce",
+      "lead": "Matcha bar na vaši akci — firemní event, svatba, otevření, workshop.",
+      "body": [
+        "Chcete na akci něco jiného než kávu? Přivezeme matcha bar s ceremoniální matchou a připravíme čerstvé matcha latte přímo u vás. Ideální pro firemní eventy, teambuildingy, svatby, otevření provozoven nebo workshopy."
+      ],
+      "sections": [
+        { "h": "Co nabízíme", "p": "Mobilní matcha bar s baristou, ceremoniální matcha latte (teplé i ledové), ovocné a signature varianty i rostlinné mléko. Přizpůsobíme se počtu hostů i tématu akce." },
+        { "h": "Pro koho", "p": "Firemní akce, teambuildingy, svatby, otevření provozoven, veletrhy, workshopy a soukromé oslavy — v Praze i okolí." },
+        { "h": "Domluvit termín", "p": "Napište nám přes Kontakt — připravíme nabídku na míru podle počtu hostů a místa konání." }
+      ],
+      "ogHeading": "Matcha catering"
+    },
+    "recipe": {
+      "h1": "Jak si udělat matcha latte doma",
+      "lead": "Jednoduchý recept na matcha latte krok za krokem — a kde sehnat kvalitní matchu.",
+      "body": [
+        "Matcha latte si připravíte i doma za pár minut. Klíč je v kvalitní ceremoniální matcha a správném ušlehání. Tady je náš postup — a když nemáte chuť šlehat, stavte se k nám na hotové."
+      ],
+      "sections": [
+        { "h": "Co budete potřebovat", "p": "Ceremoniální matchu (1–2 g), bambusovou metličku chasen (nebo elektrický šlehač), sítko, teplou vodu (~80 °C, ne vařící) a mléko dle chuti." },
+        { "h": "Postup krok za krokem", "p": "1) Prosejte matchu do misky. 2) Zalijte trochou horké vody (80 °C). 3) Šlehejte chasenem do tvaru písmene W asi 20 s do pěny. 4) Přelijte do sklenice s mlékem (teplým i s ledem). Hotovo." },
+        { "h": "Tip na kvalitu", "p": "Chuť dělá matcha — sáhněte po ceremoniální kvalitě z prvního sběru. Nebo se stavte ochutnat naši na Husitské 55, Praha 3." }
+      ],
+      "ogHeading": "Matcha latte recept"
     }
   },
   "heroTag": "Prémiová kavárna s ceremoniální matchou z Japonska",
@@ -233,6 +275,18 @@
     "lpTogo": {
       "title": "Matcha s sebou — NOA Matcha Café, Praha 3 (Žižkov)",
       "description": "Matcha latte a káva s sebou (take-away) z ceremoniální matchy. Rychle a čerstvě. Husitská 55, Praha 3 – Žižkov. Otevřeno každý den."
+    },
+    "lpIced": {
+      "title": "Ledová matcha Praha — NOA Matcha Café, Žižkov",
+      "description": "Osvěžující ledová matcha (iced matcha latte) z ceremoniální matchy. Ovocné i signature varianty. Husitská 55, Praha 3 – Žižkov."
+    },
+    "lpCatering": {
+      "title": "Matcha catering & firemní akce — NOA Matcha Café",
+      "description": "Mobilní matcha bar na vaši akci — firemní event, svatba, workshop. Ceremoniální matcha latte přímo u vás. Praha a okolí."
+    },
+    "lpRecipe": {
+      "title": "Jak udělat matcha latte doma — recept | NOA Matcha",
+      "description": "Jednoduchý recept na matcha latte krok za krokem: co potřebujete, postup se šleháním chasenem a tip na kvalitní matchu. NOA Matcha Café Praha 3."
     }
   }
 }

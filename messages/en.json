@@ -61,6 +61,9 @@
   "lpZizkovCrumb": "Café in Žižkov",
   "lpCeremonialCrumb": "Ceremonial matcha",
   "lpTogoCrumb": "Matcha to go",
+  "lpIcedCrumb": "Iced matcha",
+  "lpCateringCrumb": "Matcha catering",
+  "lpRecipeCrumb": "Matcha latte recipe",
   "landing": {
     "latte": {
       "h1": "Matcha Latte in Prague",
@@ -113,6 +116,45 @@
         { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
       ],
       "ogHeading": "Matcha to go"
+    },
+    "iced": {
+      "h1": "Iced matcha",
+      "lead": "Refreshing iced matcha made with ceremonial matcha — perfect for hot days.",
+      "body": [
+        "Iced matcha (iced matcha latte) is the cool, refreshing version of our premium matcha. We whisk ceremonial matcha, pour it over ice with milk or a plant-based alternative — for a refreshing drink with a vivid color and natural sweetness, no bitterness."
+      ],
+      "sections": [
+        { "h": "Iced variations", "p": "Classic iced matcha latte, fruity (apricot, raspberry, strawberry) and signature Coconut Cloud with fluffy foam. All from ceremonial matcha." },
+        { "h": "Why iced matcha", "p": "Natural energy from L-theanine and caffeine without the jitters, less sugar than sodas and a full flavor even over ice. A great alternative to iced coffee." },
+        { "h": "Where to get it", "p": "Husitská 55, Prague 3 – Žižkov. Open every day, dine-in or to go." }
+      ],
+      "ogHeading": "Iced matcha"
+    },
+    "catering": {
+      "h1": "Matcha catering & corporate events",
+      "lead": "A matcha bar for your event — corporate event, wedding, opening, workshop.",
+      "body": [
+        "Want something other than coffee at your event? We'll bring a matcha bar with ceremonial matcha and make fresh matcha lattes right at your venue. Perfect for corporate events, team buildings, weddings, store openings or workshops."
+      ],
+      "sections": [
+        { "h": "What we offer", "p": "A mobile matcha bar with a barista, ceremonial matcha latte (hot or iced), fruity and signature variations and plant-based milk. We adapt to your guest count and theme." },
+        { "h": "Who it's for", "p": "Corporate events, team buildings, weddings, store openings, trade fairs, workshops and private parties — in Prague and beyond." },
+        { "h": "Book a date", "p": "Write to us via Contact — we'll prepare a tailored quote based on guest count and venue." }
+      ],
+      "ogHeading": "Matcha catering"
+    },
+    "recipe": {
+      "h1": "How to make matcha latte at home",
+      "lead": "A simple step-by-step matcha latte recipe — and where to get quality matcha.",
+      "body": [
+        "You can make a matcha latte at home in a few minutes. The key is quality ceremonial matcha and proper whisking. Here's our method — and when you don't feel like whisking, drop by for the real thing."
+      ],
+      "sections": [
+        { "h": "What you'll need", "p": "Ceremonial matcha (1–2 g), a bamboo chasen whisk (or an electric frother), a sieve, warm water (~80 °C, not boiling) and milk of your choice." },
+        { "h": "Step by step", "p": "1) Sift the matcha into a bowl. 2) Add a little hot water (80 °C). 3) Whisk with the chasen in a 'W' motion for about 20 s until foamy. 4) Pour into a glass with milk (hot or over ice). Done." },
+        { "h": "Quality tip", "p": "Matcha makes the flavor — reach for ceremonial grade from the first harvest. Or come taste ours at Husitská 55, Prague 3." }
+      ],
+      "ogHeading": "Matcha latte recipe"
     }
   },
   "heroTag": "Premium café with ceremonial matcha from Japan",
@@ -233,6 +275,18 @@
     "lpTogo": {
       "title": "Matcha to go — NOA Matcha Café, Prague 3 (Žižkov)",
       "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Husitská 55, Prague 3 – Žižkov. Open every day."
+    },
+    "lpIced": {
+      "title": "Iced matcha Prague — NOA Matcha Café, Žižkov",
+      "description": "Refreshing iced matcha (iced matcha latte) made with ceremonial matcha. Fruity and signature variations. Husitská 55, Prague 3 – Žižkov."
+    },
+    "lpCatering": {
+      "title": "Matcha catering & corporate events — NOA Matcha Café",
+      "description": "A mobile matcha bar for your event — corporate event, wedding, workshop. Ceremonial matcha latte at your venue. Prague and beyond."
+    },
+    "lpRecipe": {
+      "title": "How to make matcha latte at home — recipe | NOA Matcha",
+      "description": "A simple step-by-step matcha latte recipe: what you need, whisking with a chasen and a tip on quality matcha. NOA Matcha Café Prague 3."
     }
   }
 }

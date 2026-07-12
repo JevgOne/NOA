@@ -15,7 +15,10 @@ export type PageKey =
   | 'lpLatte'
   | 'lpZizkov'
   | 'lpCeremonial'
-  | 'lpTogo';
+  | 'lpTogo'
+  | 'lpIced'
+  | 'lpCatering'
+  | 'lpRecipe';
 
 // Lokalizované slugy. Prázdný slug = domovská stránka /[locale].
 export const slugForPage: Record<Locale, Record<PageKey, string>> = {
@@ -23,11 +26,13 @@ export const slugForPage: Record<Locale, Record<PageKey, string>> = {
     home: '', menu: 'menu', gallery: 'galerie', reviews: 'recenze', about: 'o-nas', contact: 'kontakt',
     lpLatte: 'matcha-latte-praha', lpZizkov: 'kavarna-zizkov',
     lpCeremonial: 'ceremonialni-matcha', lpTogo: 'matcha-s-sebou',
+    lpIced: 'ledova-matcha', lpCatering: 'matcha-catering', lpRecipe: 'matcha-latte-recept',
   },
   en: {
     home: '', menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
     lpLatte: 'matcha-latte-prague', lpZizkov: 'cafe-zizkov',
     lpCeremonial: 'ceremonial-matcha', lpTogo: 'matcha-to-go',
+    lpIced: 'iced-matcha', lpCatering: 'matcha-catering', lpRecipe: 'matcha-latte-recipe',
   },
 };
 
@@ -37,16 +42,20 @@ export const pageForSlug: Record<Locale, Record<string, PageKey>> = {
     menu: 'menu', galerie: 'gallery', recenze: 'reviews', 'o-nas': 'about', kontakt: 'contact',
     'matcha-latte-praha': 'lpLatte', 'kavarna-zizkov': 'lpZizkov',
     'ceremonialni-matcha': 'lpCeremonial', 'matcha-s-sebou': 'lpTogo',
+    'ledova-matcha': 'lpIced', 'matcha-catering': 'lpCatering', 'matcha-latte-recept': 'lpRecipe',
   },
   en: {
     menu: 'menu', gallery: 'gallery', reviews: 'reviews', about: 'about', contact: 'contact',
     'matcha-latte-prague': 'lpLatte', 'cafe-zizkov': 'lpZizkov',
     'ceremonial-matcha': 'lpCeremonial', 'matcha-to-go': 'lpTogo',
+    'iced-matcha': 'lpIced', 'matcha-catering': 'lpCatering', 'matcha-latte-recipe': 'lpRecipe',
   },
 };
 
 // Landing pages (SEO) — pro sitemap a prolinkování.
-export const landingPages: PageKey[] = ['lpLatte', 'lpZizkov', 'lpCeremonial', 'lpTogo'];
+export const landingPages: PageKey[] = [
+  'lpLatte', 'lpZizkov', 'lpCeremonial', 'lpTogo', 'lpIced', 'lpCatering', 'lpRecipe',
+];
 
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);

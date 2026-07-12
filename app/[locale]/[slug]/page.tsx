@@ -57,6 +57,9 @@ export default async function SlugPage({
     lpZizkov: t('lpZizkovCrumb'),
     lpCeremonial: t('lpCeremonialCrumb'),
     lpTogo: t('lpTogoCrumb'),
+    lpIced: t('lpIcedCrumb'),
+    lpCatering: t('lpCateringCrumb'),
+    lpRecipe: t('lpRecipeCrumb'),
   };
 
   return (
@@ -71,6 +74,9 @@ export default async function SlugPage({
       {page === 'lpZizkov' && <LandingContent locale={l} landingKey="zizkov" />}
       {page === 'lpCeremonial' && <LandingContent locale={l} landingKey="ceremonial" />}
       {page === 'lpTogo' && <LandingContent locale={l} landingKey="togo" />}
+      {page === 'lpIced' && <LandingContent locale={l} landingKey="iced" />}
+      {page === 'lpCatering' && <LandingContent locale={l} landingKey="catering" />}
+      {page === 'lpRecipe' && <LandingContent locale={l} landingKey="recipe" />}
     </>
   );
 }
