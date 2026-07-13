@@ -384,7 +384,8 @@ footer.site .foot-credit a:hover{color:var(--green)}
   .nav-panel-brand{font-family:var(--font-cinzel);font-weight:600;color:var(--green);letter-spacing:.14em;font-size:1.15rem}
   .nav-close{display:flex;background:none;border:0;color:var(--green);cursor:pointer;padding:.2rem;margin:-.2rem -.3rem -.2rem 0}
   .nav-close svg{width:24px;height:24px}
-  .nav-links a{font-size:1.05rem;padding:.9rem 0;width:100%;border-bottom:1px solid var(--rule-soft)}
+  .nav-links a{display:block;font-size:1.05rem;padding:.9rem 0;width:100%;border-bottom:1px solid var(--rule-soft)}
+  .nav-links li:last-of-type a,.nav-links .lang-li a{border-bottom:none}
   .nav-links .lang-li{margin-top:1.2rem}
   .nav-links .lang{margin-left:0}
   .nav-links .lang a{border-bottom:none;padding:.35rem .7rem;width:auto}
