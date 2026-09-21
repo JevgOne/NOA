@@ -229,9 +229,8 @@
   "cWalk": "{min} min walk",
   "cDirections": "Directions",
   "cToday": "today",
-  "cReach": "Call or write to us",
+  "cReach": "Call us",
   "cPhone": "Phone",
-  "cMail": "E-mail",
   "cHours": "Opening hours",
   "dMonFri": "Mon – Fri",
   "dSat": "Saturday",
@@ -271,7 +270,7 @@
     },
     "contact": {
       "title": "Contact — NOA Matcha Café Prague 1, Old Town",
-      "description": "Find us at Revoluční 763/15, 110 00 Prague 1 (Old Town). Opening hours, phone, e-mail and map for NOA Matcha café. Drop by for a cup of matcha."
+      "description": "Find us at Revoluční 763/15, 110 00 Prague 1 (Old Town). Opening hours, phone, directions and map for NOA Matcha café. Drop by for a cup of matcha."
     },
     "lpLatte": {
       "title": "Matcha Latte Prague — NOA Matcha Café, Old Town",

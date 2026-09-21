@@ -229,9 +229,8 @@
   "cWalk": "{min} min pěšky",
   "cDirections": "Navigovat",
   "cToday": "dnes",
-  "cReach": "Napište nebo zavolejte",
+  "cReach": "Zavolejte nám",
   "cPhone": "Telefon",
-  "cMail": "E-mail",
   "cHours": "Otevírací doba",
   "dMonFri": "Po – Pá",
   "dSat": "Sobota",
@@ -271,7 +270,7 @@
     },
     "contact": {
       "title": "Kontakt — NOA Matcha Café Praha 1, Staré Město",
-      "description": "Najdete nás na Revoluční 763/15, 110 00 Praha 1 (Staré Město). Otevírací doba, telefon, e-mail a mapa kavárny NOA Matcha. Zastavte se na šálek matchy."
+      "description": "Najdete nás na Revoluční 763/15, 110 00 Praha 1 (Staré Město). Otevírací doba, telefon, spojení a mapa kavárny NOA Matcha. Zastavte se na šálek matchy."
     },
     "lpLatte": {
       "title": "Matcha Latte Praha — NOA Matcha Café, Staré Město",

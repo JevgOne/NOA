@@ -102,10 +102,6 @@ export default function ContactContent({ locale }: { locale: Locale }) {
                 <span className="reach-k">{t('cPhone')}</span>
                 <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a>
               </li>
-              <li>
-                <span className="reach-k">{t('cMail')}</span>
-                <a href={`mailto:${business.email}`}>{business.email}</a>
-              </li>
             </ul>
           </section>
         </div>

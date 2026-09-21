@@ -14,7 +14,6 @@ export const business = {
   country: 'CZ',
   phone: '+420775502831',
   phoneDisplay: '+420 775 502 831',
-  email: 'ahoj@noamatcha.cz',
   priceRange: '$$',
   servesCuisine: ['Matcha', 'Coffee', 'Café'],
   currency: 'CZK',

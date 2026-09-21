@@ -105,7 +105,6 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     description: m.seo.home.description,
     url: `${SITE_URL}${pathFor(locale, 'home')}`,
     telephone: business.phone,
-    email: business.email,
     legalName: business.legalName,
     taxID: operator.ico,
     vatID: operator.dic,
