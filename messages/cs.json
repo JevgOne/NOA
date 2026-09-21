@@ -53,7 +53,7 @@
     { "q": "Máte i klasickou kávu?", "a": "Ano. Kromě matchy děláme i espresso, cappuccino, flat white, latte a další — najdete je v našem menu." },
     { "q": "Co je ceremoniální matcha?", "a": "Ceremoniální matcha je nejvyšší kvalita zeleného čaje z prvního jarního sběru, jemně mletá na kamenných mlýncích. Má sytou barvu a hedvábnou, nehořkou chuť." },
     { "q": "Dá se u vás rezervovat stůl?", "a": "Ano, stůl si můžete rezervovat telefonicky — kontakt najdete na stránce Kontakt." },
-    { "q": "Jaká je otevírací doba?", "a": "Otevřeno máme každý den, pondělí–neděle 10:00–19:00." }
+    { "q": "Jaká je otevírací doba?", "a": "Pondělí–pátek 8:00–16:30, sobota 9:00–15:00. V neděli máme zavřeno." }
   ],
   "lpCtaMenu": "Zobrazit menu a ceny",
   "lpCtaContact": "Kde nás najdete",
@@ -74,7 +74,7 @@
       "sections": [
         { "h": "Jak připravujeme matcha latte", "p": "Každé latte šleháme čerstvě z ceremoniální matchy a doplňujeme mlékem dle výběru. Dáte si ho teplé i ledové (hot / iced) — přesně jak máte rádi." },
         { "h": "Ovocné a signature varianty", "p": "Kromě klasického matcha latte nabízíme ovocné variace — meruňka, malina, jahoda — i signature nápoje jako Coconut Cloud nebo Maple Sea Salt. Kompletní nabídku i ceny najdete v našem menu." },
-        { "h": "Kde matcha latte ochutnáte", "p": "Najdete nás na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno denně 10–19. Zastavte se na šálek prémiové matchy." }
+        { "h": "Kde matcha latte ochutnáte", "p": "Najdete nás na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno Po–So. Zastavte se na šálek prémiové matchy." }
       ],
       "ogHeading": "Matcha Latte v Praze"
     },
@@ -87,7 +87,7 @@
       "sections": [
         { "h": "Co u nás najdete", "p": "Ceremoniální matcha latte (teplé i ledové), ovocné a signature matcha nápoje, klasickou kávu (espresso, cappuccino, flat white, latte) a klid k posezení." },
         { "h": "Kde nás najdete", "p": "Revoluční 763/15, 110 00 Praha 1 – Staré Město. Tramvajová zastávka Dlouhá třída (linky 6, 8, 15, 26) je hned před domem, metro B Náměstí Republiky je asi 5 minut pěšky." },
-        { "h": "Otevírací doba", "p": "Pondělí–neděle 10:00–19:00. Otevřeno každý den." }
+        { "h": "Otevírací doba", "p": "Po–Pá 8:00–16:30, So 9:00–15:00, v neděli zavřeno." }
       ],
       "ogHeading": "Matcha kavárna, Praha 1"
     },
@@ -100,7 +100,7 @@
       "sections": [
         { "h": "Čím se liší od běžné matchy", "p": "Kulinární (culinary) matcha je levnější, hrubší a hořčí — hodí se do pečení. Ceremoniální matcha se pije samotná nebo v latte, protože její chuť je jemná a plná. My používáme výhradně ceremoniální kvalitu." },
         { "h": "Jak ji připravujeme", "p": "Každý šálek ručně šleháme bambusovým chasenem do nadýchané pěny — teplé i ledové. Dáte si ji jako čisté usu-cha, nebo jako krémové matcha latte." },
-        { "h": "Kde ceremoniální matchu ochutnáte", "p": "Přijďte na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno denně 10–19." }
+        { "h": "Kde ceremoniální matchu ochutnáte", "p": "Přijďte na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno Po–So." }
       ],
       "ogHeading": "Ceremoniální matcha"
     },
@@ -113,7 +113,7 @@
       "sections": [
         { "h": "Co si dáte s sebou", "p": "Matcha latte (hot / iced), ovocné a signature matcha nápoje i klasickou kávu. Vše čerstvě připravené na počkání." },
         { "h": "Kde si vyzvednete", "p": "Stavte se na Revoluční 763/15, Praha 1 – Staré Město. Hned u tramvajové zastávky Dlouhá třída a pár minut od metra Náměstí Republiky — ideální cestou do práce i na procházku." },
-        { "h": "Otevírací doba", "p": "Pondělí–neděle 10:00–19:00. Otevřeno každý den." }
+        { "h": "Otevírací doba", "p": "Po–Pá 8:00–16:30, So 9:00–15:00, v neděli zavřeno." }
       ],
       "ogHeading": "Matcha s sebou"
     },
@@ -126,7 +126,7 @@
       "sections": [
         { "h": "Ledové varianty", "p": "Klasické iced matcha latte, ovocné (meruňka, malina, jahoda) i signature Coconut Cloud s nadýchanou pěnou. Vše z ceremoniální matchy." },
         { "h": "Proč ledová matcha", "p": "Přirozená energie z L-theaninu a kofeinu bez nervozity, méně cukru než limonády a sytá chuť i s ledem. Skvělá alternativa k ledové kávě." },
-        { "h": "Kde ji dáte", "p": "Revoluční 763/15, Praha 1 – Staré Město. Otevřeno denně 10–19, na místě i s sebou." }
+        { "h": "Kde ji dáte", "p": "Revoluční 763/15, Praha 1 – Staré Město. Otevřeno Po–So, na místě i s sebou." }
       ],
       "ogHeading": "Ledová matcha"
     },
@@ -168,10 +168,10 @@
   "cafeCta": "Kde nás najdete",
   "cafePhotoAlt": "Interiér kavárny NOA Matcha",
   "inviteEy": "Zastavte se u nás",
-  "inviteH": "Otevřeno každý den",
+  "inviteH": "Otevřeno od pondělí do soboty",
   "inviteAddrK": "Adresa",
   "inviteHoursK": "Otevírací doba",
-  "inviteHoursV": "Po–Ne 10–19",
+  "inviteHoursV": "Po–Pá 8–16:30 · So 9–15",
   "inviteBtn": "Navštivte nás",
   "classic": "Classic Matcha",
   "signature": "Signature Matcha",
@@ -251,7 +251,7 @@
     "ogAlt": "NOA Matcha Café — prémiová matcha v Praze 1, Staré Město",
     "home": {
       "title": "NOA Matcha Café — Prémiová matcha v Praze 1, Staré Město",
-      "description": "Prémiová matcha kavárna s ceremoniální matchou z Japonska. Matcha latte i signature nápoje na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno denně 10–19."
+      "description": "Prémiová matcha kavárna s ceremoniální matchou z Japonska. Matcha latte i signature nápoje na Revoluční 763/15, Praha 1 – Staré Město. Otevřeno Po–So."
     },
     "menu": {
       "title": "Menu a ceny — NOA Matcha Café Praha 1",
@@ -279,7 +279,7 @@
     },
     "lpOldTown": {
       "title": "Kavárna Staré Město — matcha kavárna NOA, Praha 1",
-      "description": "Matcha kavárna na Starém Městě. Ceremoniální matcha latte i prémiová káva na Revoluční 763/15, Praha 1. Otevřeno denně 10–19. Zastavte se na šálek."
+      "description": "Matcha kavárna na Starém Městě. Ceremoniální matcha latte i prémiová káva na Revoluční 763/15, Praha 1. Otevřeno Po–So. Zastavte se na šálek."
     },
     "lpCeremonial": {
       "title": "Ceremoniální matcha — NOA Matcha Café, Praha 1",
@@ -287,7 +287,7 @@
     },
     "lpTogo": {
       "title": "Matcha s sebou — NOA Matcha Café, Praha 1 (Staré Město)",
-      "description": "Matcha latte a káva s sebou (take-away) z ceremoniální matchy. Rychle a čerstvě. Revoluční 763/15, Praha 1 – Staré Město. Otevřeno denně 10–19."
+      "description": "Matcha latte a káva s sebou (take-away) z ceremoniální matchy. Rychle a čerstvě. Revoluční 763/15, Praha 1 – Staré Město. Otevřeno Po–So."
     },
     "lpIced": {
       "title": "Ledová matcha Praha — NOA Matcha Café, Staré Město",

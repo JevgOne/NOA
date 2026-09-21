@@ -22,10 +22,11 @@ export const business = {
   // Placeholder — doplň reálné profily.
   sameAs: [] as string[],
   openingHours: [
-    { label: 'dDaily', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '19:00' },
+    { label: 'dMonFri', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '16:30' },
+    { label: 'dSat', days: ['Saturday'], opens: '09:00', closes: '15:00' },
   ],
   // Dny bez otevírací doby — zobrazí se jako „Zavřeno“.
-  closedDays: [] as { label: string; days: string[] }[],
+  closedDays: [{ label: 'dSun', days: ['Sunday'] }] as { label: string; days: string[] }[],
   // Placeholder hodnocení — nahraď reálnými čísly (např. z Google Business).
   aggregateRating: { ratingValue: 4.9, reviewCount: 127 },
 } as const;

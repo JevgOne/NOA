@@ -53,7 +53,7 @@
     { "q": "Do you also serve regular coffee?", "a": "Yes. Besides matcha we make espresso, cappuccino, flat white, latte and more — see our menu." },
     { "q": "What is ceremonial matcha?", "a": "Ceremonial matcha is the highest grade of green tea from the first spring harvest, stone-milled into a fine powder. It has a vivid color and a silky, non-bitter taste." },
     { "q": "Can I reserve a table?", "a": "Yes, you can reserve a table by phone — find the contact on the Contact page." },
-    { "q": "What are your opening hours?", "a": "We're open every day, Monday–Sunday 10:00–19:00." }
+    { "q": "What are your opening hours?", "a": "Monday–Friday 8:00–16:30, Saturday 9:00–15:00. Closed on Sundays." }
   ],
   "lpCtaMenu": "View menu & prices",
   "lpCtaContact": "Find us",
@@ -74,7 +74,7 @@
       "sections": [
         { "h": "How we make our matcha latte", "p": "Every latte is freshly whisked from ceremonial matcha and topped with the milk of your choice. Have it hot or iced — just the way you like it." },
         { "h": "Fruity and signature variations", "p": "Besides the classic matcha latte we offer fruity variations — apricot, raspberry, strawberry — and signature drinks like Coconut Cloud or Maple Sea Salt. See the full menu and prices." },
-        { "h": "Where to try it", "p": "Find us at Revoluční 763/15, Prague 1 – Old Town. Open daily 10–19. Drop by for a cup of premium matcha." }
+        { "h": "Where to try it", "p": "Find us at Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat. Drop by for a cup of premium matcha." }
       ],
       "ogHeading": "Matcha Latte in Prague"
     },
@@ -87,7 +87,7 @@
       "sections": [
         { "h": "What we offer", "p": "Ceremonial matcha latte (hot or iced), fruity and signature matcha drinks, classic coffee (espresso, cappuccino, flat white, latte) and a calm place to sit." },
         { "h": "Where to find us", "p": "Revoluční 763/15, 110 00 Prague 1 – Old Town. The Dlouhá třída tram stop (lines 6, 8, 15, 26) is right outside, and metro line B at Náměstí Republiky is about a 5-minute walk." },
-        { "h": "Opening hours", "p": "Monday–Sunday 10:00–19:00. Open every day." }
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
       ],
       "ogHeading": "Matcha café, Prague 1"
     },
@@ -100,7 +100,7 @@
       "sections": [
         { "h": "How it differs from regular matcha", "p": "Culinary matcha is cheaper, coarser and more bitter — great for baking. Ceremonial matcha is meant to be sipped on its own or in a latte, because its flavor is smooth and full. We use ceremonial grade only." },
         { "h": "How we prepare it", "p": "Every cup is hand-whisked with a bamboo chasen into a fluffy foam — hot or iced. Have it as pure usucha or as a creamy matcha latte." },
-        { "h": "Where to try it", "p": "Come to Revoluční 763/15, Prague 1 – Old Town. Open daily 10–19." }
+        { "h": "Where to try it", "p": "Come to Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat." }
       ],
       "ogHeading": "Ceremonial matcha"
     },
@@ -113,7 +113,7 @@
       "sections": [
         { "h": "What you can grab", "p": "Matcha latte (hot / iced), fruity and signature matcha drinks and classic coffee. All freshly made to order." },
         { "h": "Where to pick it up", "p": "Drop by Revoluční 763/15, Prague 1 – Old Town. Right by the Dlouhá třída tram stop and a few minutes from Náměstí Republiky metro — perfect on your way to work or a walk." },
-        { "h": "Opening hours", "p": "Monday–Sunday 10:00–19:00. Open every day." }
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
       ],
       "ogHeading": "Matcha to go"
     },
@@ -126,7 +126,7 @@
       "sections": [
         { "h": "Iced variations", "p": "Classic iced matcha latte, fruity (apricot, raspberry, strawberry) and signature Coconut Cloud with fluffy foam. All from ceremonial matcha." },
         { "h": "Why iced matcha", "p": "Natural energy from L-theanine and caffeine without the jitters, less sugar than sodas and a full flavor even over ice. A great alternative to iced coffee." },
-        { "h": "Where to get it", "p": "Revoluční 763/15, Prague 1 – Old Town. Open daily 10–19, dine-in or to go." }
+        { "h": "Where to get it", "p": "Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat, dine-in or to go." }
       ],
       "ogHeading": "Iced matcha"
     },
@@ -168,10 +168,10 @@
   "cafeCta": "Find us",
   "cafePhotoAlt": "Interior of NOA Matcha café",
   "inviteEy": "Come see us",
-  "inviteH": "Open every day",
+  "inviteH": "Open Monday to Saturday",
   "inviteAddrK": "Address",
   "inviteHoursK": "Opening hours",
-  "inviteHoursV": "Mon–Sun 10–19",
+  "inviteHoursV": "Mon–Fri 8–16:30 · Sat 9–15",
   "inviteBtn": "Visit us",
   "classic": "Classic Matcha",
   "signature": "Signature Matcha",
@@ -251,7 +251,7 @@
     "ogAlt": "NOA Matcha Café — premium matcha in Prague 1, Old Town",
     "home": {
       "title": "NOA Matcha Café — Premium matcha in Prague 1, Old Town",
-      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte and signature drinks at Revoluční 763/15, Prague 1 – Old Town. Open daily 10–19."
+      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte and signature drinks at Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat."
     },
     "menu": {
       "title": "Menu & prices — NOA Matcha Café Prague 1",
@@ -279,7 +279,7 @@
     },
     "lpOldTown": {
       "title": "Café in Old Town — NOA Matcha Café, Prague 1",
-      "description": "Matcha café in Prague's Old Town. Ceremonial matcha latte and premium coffee at Revoluční 763/15, Prague 1. Open daily 10–19. Drop by for a cup."
+      "description": "Matcha café in Prague's Old Town. Ceremonial matcha latte and premium coffee at Revoluční 763/15, Prague 1. Open Mon–Sat. Drop by for a cup."
     },
     "lpCeremonial": {
       "title": "Ceremonial matcha — NOA Matcha Café, Prague 1",
@@ -287,7 +287,7 @@
     },
     "lpTogo": {
       "title": "Matcha to go — NOA Matcha Café, Prague 1 (Old Town)",
-      "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Revoluční 763/15, Prague 1 – Old Town. Open daily 10–19."
+      "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat."
     },
     "lpIced": {
       "title": "Iced matcha Prague — NOA Matcha Café, Old Town",
