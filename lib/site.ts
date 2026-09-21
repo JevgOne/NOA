@@ -22,10 +22,10 @@ export const business = {
   // Placeholder — doplň reálné profily.
   sameAs: [] as string[],
   openingHours: [
-    { label: 'dMonSat', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '08:00', closes: '20:00' },
+    { label: 'dDaily', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '10:00', closes: '19:00' },
   ],
   // Dny bez otevírací doby — zobrazí se jako „Zavřeno“.
-  closedDays: [{ label: 'dSun', days: ['Sunday'] }],
+  closedDays: [] as { label: string; days: string[] }[],
   // Placeholder hodnocení — nahraď reálnými čísly (např. z Google Business).
   aggregateRating: { ratingValue: 4.9, reviewCount: 127 },
 } as const;
@@ -38,11 +38,11 @@ export const operator = {
   responsible: 'Adrian Križan',
 } as const;
 
-// Placeholder odkazy na sociální sítě — doplň reálné profily.
+// Sociální sítě — prázdný řetězec = profil zatím neexistuje (ikona se skryje).
 export const social = {
-  instagram: 'https://instagram.com/',
-  instagramHandle: '@noamatcha',
-  facebook: 'https://facebook.com/',
+  instagram: 'https://www.instagram.com/noamatcha.cz/',
+  instagramHandle: '@noamatcha.cz',
+  facebook: '',
 } as const;
 
 // Spojení MHD (ověřeno z dat PID, 9/2026).

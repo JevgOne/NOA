@@ -1,5 +1,5 @@
 import { type Locale, getT } from '@/lib/i18n';
-import { business, operator, transport } from '@/lib/site';
+import { business, operator, transport, social } from '@/lib/site';
 import Footline from '@/components/Footline';
 import LeafRule from '@/components/LeafRule';
 import OpenStatus from '@/components/OpenStatus';
@@ -128,18 +128,20 @@ export default function ContactContent({ locale }: { locale: Locale }) {
         </p>
 
         <div className="socials">
-          <a href="#" aria-label="Instagram">
+          <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden="true">
               <rect x="3" y="3" width="18" height="18" rx="5" />
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
           </a>
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden="true">
-              <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1Z" />
-            </svg>
-          </a>
+          {social.facebook && (
+            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden="true">
+                <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1Z" />
+              </svg>
+            </a>
+          )}
         </div>
         <Footline locale={locale} />
       </div>
