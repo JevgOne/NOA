@@ -3,7 +3,7 @@ import { getMessages, isLocale, pageForSlug, type Locale, type PageKey } from '@
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'NOA Matcha Café — Husitská 55, Praha 3';
+export const alt = 'NOA Matcha Café — Revoluční 763/15, Praha 1';
 
 // Nadpis pro OG obrázek dané podstránky (jen latin-1 diakritika — spolehlivě se vykreslí).
 function headingFor(locale: Locale, page: PageKey): string {
@@ -15,7 +15,7 @@ function headingFor(locale: Locale, page: PageKey): string {
     about: m.navAbout,
     contact: m.navContact,
     lpLatte: m.landing.latte.ogHeading,
-    lpZizkov: m.landing.zizkov.ogHeading,
+    lpOldTown: m.landing.oldtown.ogHeading,
     lpCeremonial: m.landing.ceremonial.ogHeading,
     lpTogo: m.landing.togo.ogHeading,
     lpIced: m.landing.iced.ogHeading,
@@ -53,7 +53,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           {heading}
         </div>
         <div style={{ display: 'flex', fontSize: 26, color: '#6E6553', letterSpacing: 4, marginTop: 34 }}>
-          Husitská 55 · Praha 3
+          Revoluční 763/15 · Praha 1
         </div>
       </div>
     ),

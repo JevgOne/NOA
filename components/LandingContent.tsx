@@ -15,7 +15,7 @@ export default function LandingContent({
   landingKey,
 }: {
   locale: Locale;
-  landingKey: 'latte' | 'zizkov' | 'ceremonial' | 'togo' | 'iced' | 'catering' | 'recipe';
+  landingKey: 'latte' | 'oldtown' | 'ceremonial' | 'togo' | 'iced' | 'catering' | 'recipe';
 }) {
   const t = getT(locale);
   const data = (getMessages(locale) as unknown as { landing: Record<string, LandingData> }).landing[landingKey];

@@ -54,7 +54,7 @@ export default async function SlugPage({
     about: t('navAbout'),
     contact: t('navContact'),
     lpLatte: t('lpLatteCrumb'),
-    lpZizkov: t('lpZizkovCrumb'),
+    lpOldTown: t('lpOldTownCrumb'),
     lpCeremonial: t('lpCeremonialCrumb'),
     lpTogo: t('lpTogoCrumb'),
     lpIced: t('lpIcedCrumb'),
@@ -71,7 +71,7 @@ export default async function SlugPage({
       {page === 'about' && <AboutContent locale={l} />}
       {page === 'contact' && <ContactContent locale={l} />}
       {page === 'lpLatte' && <LandingContent locale={l} landingKey="latte" />}
-      {page === 'lpZizkov' && <LandingContent locale={l} landingKey="zizkov" />}
+      {page === 'lpOldTown' && <LandingContent locale={l} landingKey="oldtown" />}
       {page === 'lpCeremonial' && <LandingContent locale={l} landingKey="ceremonial" />}
       {page === 'lpTogo' && <LandingContent locale={l} landingKey="togo" />}
       {page === 'lpIced' && <LandingContent locale={l} landingKey="iced" />}

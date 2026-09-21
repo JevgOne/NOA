@@ -12,8 +12,8 @@ export const classic: Drink[] = [
 
 export const signature: Drink[] = [
   { id: 's1', price: 149 },
-  { id: 's2', price: 129 },
-  { id: 's3', price: 139 },
+  { id: 's2', price: 149 },
+  { id: 's3', price: 149 },
 ];
 
 // "boyfriends" káva — pořadí v boxu je prokládané (levý/pravý sloupec).
@@ -31,3 +31,7 @@ export const boyfriends: Drink[] = [
 
 // Vizuální pořadí řádků v boxu (prokládané do dvou sloupců) — přesně jako v prototypu.
 export const boyfriendsOrder = ['bf1', 'bf6', 'bf2', 'bf7', 'bf3', 'bf8', 'bf4', 'bf9', 'bf5'];
+
+export function priceOf(id: string): number {
+  return [...classic, ...signature, ...boyfriends].find((d) => d.id === id)?.price ?? 0;
+}

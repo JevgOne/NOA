@@ -1,4 +1,5 @@
 import { type Locale, getT } from '@/lib/i18n';
+import { priceOf } from '@/lib/menu';
 
 const LeafSmall = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1" aria-hidden="true">
@@ -35,25 +36,25 @@ export default function MenuSections({ locale, leadingRule = false }: { locale: 
           <h3>{t('m1n')}</h3>
           <div className="badge">{t('m1b')}</div>
           <div className="desc">{t('m1d')}</div>
-          <div className="price">109 <small>Kč</small></div>
+          <div className="price">{priceOf('m1')} <small>Kč</small></div>
         </div>
         <div className="item">
           <h3>{t('m2n')}</h3>
           <div className="cz">{t('m2c')}</div>
           <div className="desc">{t('m2d')}</div>
-          <div className="price">129 <small>Kč</small></div>
+          <div className="price">{priceOf('m2')} <small>Kč</small></div>
         </div>
         <div className="item">
           <h3>{t('m3n')}</h3>
           <div className="cz">{t('m3c')}</div>
           <div className="desc">{t('m3d')}</div>
-          <div className="price">129 <small>Kč</small></div>
+          <div className="price">{priceOf('m3')} <small>Kč</small></div>
         </div>
         <div className="item">
           <h3>{t('m4n')}</h3>
           <div className="cz">{t('m4c')}</div>
           <div className="desc">{t('m4d')}</div>
-          <div className="price">129 <small>Kč</small></div>
+          <div className="price">{priceOf('m4')} <small>Kč</small></div>
         </div>
       </div>
 
@@ -76,7 +77,7 @@ export default function MenuSections({ locale, leadingRule = false }: { locale: 
           </div>
           <h3>{t('s1n')}</h3>
           <div className="desc">{t('s1d')}</div>
-          <div className="price">149 <small>Kč</small></div>
+          <div className="price">{priceOf('s1')} <small>Kč</small></div>
         </div>
         <div className="item reveal">
           <div className="ico ico-cup">
@@ -92,7 +93,7 @@ export default function MenuSections({ locale, leadingRule = false }: { locale: 
           </div>
           <h3>{t('s2n')}</h3>
           <div className="desc">{t('s2d')}</div>
-          <div className="price">129 <small>Kč</small></div>
+          <div className="price">{priceOf('s2')} <small>Kč</small></div>
         </div>
         <div className="item reveal">
           <div className="ico ico-cup">
@@ -109,7 +110,7 @@ export default function MenuSections({ locale, leadingRule = false }: { locale: 
           </div>
           <h3>{t('s3n')}</h3>
           <div className="desc">{t('s3d')}</div>
-          <div className="price">139 <small>Kč</small></div>
+          <div className="price">{priceOf('s3')} <small>Kč</small></div>
         </div>
       </div>
 
@@ -121,15 +122,15 @@ export default function MenuSections({ locale, leadingRule = false }: { locale: 
           <LeafSmall />
         </div>
         <div className="bfcols">
-          <div className="bfrow"><span className="n">{t('bf1')}</span><span className="d" /><span className="p">59 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf6')}</span><span className="d" /><span className="p">99 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf2')}</span><span className="d" /><span className="p">79 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf7')}</span><span className="d" /><span className="p">109 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf3')}</span><span className="d" /><span className="p">69 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf8')}</span><span className="d" /><span className="p">109 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf4')}</span><span className="d" /><span className="p">89 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf9')}</span><span className="d" /><span className="p">119 <small>Kč</small></span></div>
-          <div className="bfrow"><span className="n">{t('bf5')}</span><span className="d" /><span className="p">99 <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf1')}</span><span className="d" /><span className="p">{priceOf('bf1')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf6')}</span><span className="d" /><span className="p">{priceOf('bf6')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf2')}</span><span className="d" /><span className="p">{priceOf('bf2')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf7')}</span><span className="d" /><span className="p">{priceOf('bf7')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf3')}</span><span className="d" /><span className="p">{priceOf('bf3')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf8')}</span><span className="d" /><span className="p">{priceOf('bf8')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf4')}</span><span className="d" /><span className="p">{priceOf('bf4')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf9')}</span><span className="d" /><span className="p">{priceOf('bf9')} <small>Kč</small></span></div>
+          <div className="bfrow"><span className="n">{t('bf5')}</span><span className="d" /><span className="p">{priceOf('bf5')} <small>Kč</small></span></div>
         </div>
       </div>
     </>

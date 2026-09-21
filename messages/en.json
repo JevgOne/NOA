@@ -44,21 +44,21 @@
   "lbPrev": "Previous",
   "lbNext": "Next",
   "mapH": "Find us",
-  "mapTitle": "Map — NOA Matcha Café, Husitská 55, Prague 3 (Žižkov)",
+  "mapTitle": "Map — NOA Matcha Café, Revoluční 763/15, Prague 1 (Old Town)",
   "instaH": "Follow us on Instagram",
   "instaCta": "Follow on Instagram",
   "faqH": "Frequently asked questions",
   "faq": [
-    { "q": "Where can I find you?", "a": "You'll find us at Husitská 55, Prague 3 – Žižkov. The nearest tram stop is Husinecká, a short walk from the Main Train Station." },
+    { "q": "Where can I find you?", "a": "You'll find us at Revoluční 763/15, Prague 1 – Old Town. The Dlouhá třída tram stop (lines 6, 8, 15, 26) is right outside, and metro line B at Náměstí Republiky is about a 5-minute walk." },
     { "q": "Do you also serve regular coffee?", "a": "Yes. Besides matcha we make espresso, cappuccino, flat white, latte and more — see our menu." },
     { "q": "What is ceremonial matcha?", "a": "Ceremonial matcha is the highest grade of green tea from the first spring harvest, stone-milled into a fine powder. It has a vivid color and a silky, non-bitter taste." },
     { "q": "Can I reserve a table?", "a": "Yes, you can reserve a table by phone — find the contact on the Contact page." },
-    { "q": "What are your opening hours?", "a": "We're open every day: Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
+    { "q": "What are your opening hours?", "a": "Mon–Fri 8:00–16:30, Sat 9:00–15:00. Closed on Sundays." }
   ],
   "lpCtaMenu": "View menu & prices",
   "lpCtaContact": "Find us",
   "lpLatteCrumb": "Matcha Latte",
-  "lpZizkovCrumb": "Café in Žižkov",
+  "lpOldTownCrumb": "Café in Old Town",
   "lpCeremonialCrumb": "Ceremonial matcha",
   "lpTogoCrumb": "Matcha to go",
   "lpIcedCrumb": "Iced matcha",
@@ -67,40 +67,40 @@
   "landing": {
     "latte": {
       "h1": "Matcha Latte in Prague",
-      "lead": "Creamy matcha latte made with ceremonial matcha from Japan — at NOA café in Žižkov.",
+      "lead": "Creamy matcha latte made with ceremonial matcha from Japan — at NOA café in Prague Old Town.",
       "body": [
         "Looking for the best matcha latte in Prague? At NOA Matcha Café we make our matcha latte from premium ceremonial matcha, hand-whisked with a bamboo chasen into a silky foam. No pouch powder, no bitterness — just a rich, natural taste."
       ],
       "sections": [
         { "h": "How we make our matcha latte", "p": "Every latte is freshly whisked from ceremonial matcha and topped with the milk of your choice. Have it hot or iced — just the way you like it." },
         { "h": "Fruity and signature variations", "p": "Besides the classic matcha latte we offer fruity variations — apricot, raspberry, strawberry — and signature drinks like Coconut Cloud or Maple Sea Salt. See the full menu and prices." },
-        { "h": "Where to try it", "p": "Find us at Husitská 55, Prague 3 – Žižkov. Open every day. Drop by for a cup of premium matcha." }
+        { "h": "Where to try it", "p": "Find us at Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat. Drop by for a cup of premium matcha." }
       ],
       "ogHeading": "Matcha Latte in Prague"
     },
-    "zizkov": {
-      "h1": "Matcha café in Žižkov",
-      "lead": "NOA Matcha Café — matcha and premium coffee at Husitská 55, Prague 3 (Žižkov).",
+    "oldtown": {
+      "h1": "Matcha café in Prague Old Town",
+      "lead": "NOA Matcha Café — matcha and premium coffee at Revoluční 763/15, Prague 1 (Old Town).",
       "body": [
-        "Looking for a calm café in Žižkov? NOA Matcha Café is a spot in the heart of Prague 3 where ceremonial matcha from Japan is the star — but you'll also find great espresso here. Sit down, slow down and enjoy a cup in a pleasant atmosphere."
+        "Looking for a calm café in Prague Old Town? NOA Matcha Café is a spot in the heart of Prague 1 where ceremonial matcha from Japan is the star — but you'll also find great espresso here. Sit down, slow down and enjoy a cup in a pleasant atmosphere."
       ],
       "sections": [
         { "h": "What we offer", "p": "Ceremonial matcha latte (hot or iced), fruity and signature matcha drinks, classic coffee (espresso, cappuccino, flat white, latte) and a calm place to sit." },
-        { "h": "Where to find us", "p": "Husitská 55, 130 00 Prague 3 – Žižkov. The nearest tram stop is Husinecká, a short walk from the Main Train Station." },
-        { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00. Open every day." }
+        { "h": "Where to find us", "p": "Revoluční 763/15, 110 00 Prague 1 – Old Town. The Dlouhá třída tram stop (lines 6, 8, 15, 26) is right outside, and metro line B at Náměstí Republiky is about a 5-minute walk." },
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
       ],
-      "ogHeading": "Matcha café, Prague 3"
+      "ogHeading": "Matcha café, Prague 1"
     },
     "ceremonial": {
       "h1": "Ceremonial matcha",
-      "lead": "The highest grade of matcha from the first spring harvest — at NOA café in Žižkov.",
+      "lead": "The highest grade of matcha from the first spring harvest — at NOA café in Prague Old Town.",
       "body": [
         "What is ceremonial matcha and why does it matter? Ceremonial grade matcha is the finest, highest-quality grade of green tea matcha. The leaves are shaded for weeks before harvest, hand-picked at the first spring harvest and stone-milled into a silky-fine powder. The result is a vivid green color, natural sweetness and no bitterness."
       ],
       "sections": [
         { "h": "How it differs from regular matcha", "p": "Culinary matcha is cheaper, coarser and more bitter — great for baking. Ceremonial matcha is meant to be sipped on its own or in a latte, because its flavor is smooth and full. We use ceremonial grade only." },
         { "h": "How we prepare it", "p": "Every cup is hand-whisked with a bamboo chasen into a fluffy foam — hot or iced. Have it as pure usucha or as a creamy matcha latte." },
-        { "h": "Where to try it", "p": "Come to Husitská 55, Prague 3 – Žižkov. Open every day." }
+        { "h": "Where to try it", "p": "Come to Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat." }
       ],
       "ogHeading": "Ceremonial matcha"
     },
@@ -112,8 +112,8 @@
       ],
       "sections": [
         { "h": "What you can grab", "p": "Matcha latte (hot / iced), fruity and signature matcha drinks and classic coffee. All freshly made to order." },
-        { "h": "Where to pick it up", "p": "Drop by Husitská 55, Prague 3 – Žižkov. A short walk from the Husinecká tram stop and the Main Train Station — perfect on your way to work or a walk." },
-        { "h": "Opening hours", "p": "Mon–Fri 8:00–20:00, Sat 9:00–20:00, Sun 9:00–18:00." }
+        { "h": "Where to pick it up", "p": "Drop by Revoluční 763/15, Prague 1 – Old Town. Right by the Dlouhá třída tram stop and a few minutes from Náměstí Republiky metro — perfect on your way to work or a walk." },
+        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
       ],
       "ogHeading": "Matcha to go"
     },
@@ -126,7 +126,7 @@
       "sections": [
         { "h": "Iced variations", "p": "Classic iced matcha latte, fruity (apricot, raspberry, strawberry) and signature Coconut Cloud with fluffy foam. All from ceremonial matcha." },
         { "h": "Why iced matcha", "p": "Natural energy from L-theanine and caffeine without the jitters, less sugar than sodas and a full flavor even over ice. A great alternative to iced coffee." },
-        { "h": "Where to get it", "p": "Husitská 55, Prague 3 – Žižkov. Open every day, dine-in or to go." }
+        { "h": "Where to get it", "p": "Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat, dine-in or to go." }
       ],
       "ogHeading": "Iced matcha"
     },
@@ -152,13 +152,13 @@
       "sections": [
         { "h": "What you'll need", "p": "Ceremonial matcha (1–2 g), a bamboo chasen whisk (or an electric frother), a sieve, warm water (~80 °C, not boiling) and milk of your choice." },
         { "h": "Step by step", "p": "1) Sift the matcha into a bowl. 2) Add a little hot water (80 °C). 3) Whisk with the chasen in a 'W' motion for about 20 s until foamy. 4) Pour into a glass with milk (hot or over ice). Done." },
-        { "h": "Quality tip", "p": "Matcha makes the flavor — reach for ceremonial grade from the first harvest. Or come taste ours at Husitská 55, Prague 3." }
+        { "h": "Quality tip", "p": "Matcha makes the flavor — reach for ceremonial grade from the first harvest. Or come taste ours at Revoluční 763/15, Prague 1." }
       ],
       "ogHeading": "Matcha latte recipe"
     }
   },
   "heroTag": "Premium café with ceremonial matcha from Japan",
-  "h1Suffix": "Matcha Café — matcha café, Prague 3 (Žižkov)",
+  "h1Suffix": "Matcha Café — matcha café, Prague 1 (Old Town)",
   "heroCafe": "Café",
   "scrollCue": "Menu",
   "cafeEy": "Our café",
@@ -168,10 +168,10 @@
   "cafeCta": "Find us",
   "cafePhotoAlt": "Interior of NOA Matcha café",
   "inviteEy": "Come see us",
-  "inviteH": "Open every day",
+  "inviteH": "Open Monday to Saturday",
   "inviteAddrK": "Address",
   "inviteHoursK": "Opening hours",
-  "inviteHoursV": "Mon–Fri 8–20 · Sat 9–20 · Sun 9–18",
+  "inviteHoursV": "Mon–Fri 8–16:30 · Sat 9–15",
   "inviteBtn": "Visit us",
   "classic": "Classic Matcha",
   "signature": "Signature Matcha",
@@ -223,62 +223,70 @@
   "contactH": "Contact",
   "contactLead": "Drop by for a cup. We'd love to see you.",
   "cAddr": "Address",
+  "cTransport": "Getting here",
+  "cTram": "Tram Dlouhá třída (6, 8, 15, 26) — right outside",
+  "cMetro": "Metro B Náměstí Republiky — 5 min walk",
   "cPhone": "Phone",
   "cMail": "E-mail",
   "cHours": "Opening hours",
   "dMonFri": "Mon – Fri",
   "dSat": "Saturday",
   "dSun": "Sunday",
+  "closed": "Closed",
+  "cOperator": "Operator",
+  "cIco": "Company ID",
+  "cDic": "VAT ID",
+  "cResponsible": "Responsible person",
   "breadcrumbHome": "Home",
   "langSwitchLabel": "Change language",
   "openMenuLabel": "Open menu",
   "skipToContent": "Skip to content",
   "seo": {
     "siteName": "NOA Matcha Café",
-    "ogAlt": "NOA Matcha Café — premium matcha in Prague 3, Žižkov",
+    "ogAlt": "NOA Matcha Café — premium matcha in Prague 1, Old Town",
     "home": {
-      "title": "NOA Matcha Café — Premium matcha in Prague 3, Žižkov",
-      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte and signature drinks at Husitská 55, Prague 3 – Žižkov. Open every day."
+      "title": "NOA Matcha Café — Premium matcha in Prague 1, Old Town",
+      "description": "Premium matcha café with ceremonial matcha from Japan. Matcha latte and signature drinks at Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat."
     },
     "menu": {
-      "title": "Menu & prices — NOA Matcha Café Prague 3",
-      "description": "The full NOA Matcha drinks list: Classic and Signature matcha drinks, fruity variations and classic coffee. Prices in CZK. Husitská 55, Prague 3 – Žižkov."
+      "title": "Menu & prices — NOA Matcha Café Prague 1",
+      "description": "The full NOA Matcha drinks list: Classic and Signature matcha drinks, fruity variations and classic coffee. Prices in CZK. Revoluční 763/15, Prague 1 – Old Town."
     },
     "gallery": {
-      "title": "Gallery — NOA Matcha Café Prague 3",
-      "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere. Husitská 55, Prague 3 – Žižkov."
+      "title": "Gallery — NOA Matcha Café Prague 1",
+      "description": "Take a look inside NOA Matcha — ceremonial matcha, latte art, interior and atmosphere. Revoluční 763/15, Prague 1 – Old Town."
     },
     "reviews": {
-      "title": "Reviews & ratings — NOA Matcha Café Prague 3",
-      "description": "Reviews and ratings of NOA Matcha café, Prague 3 (Žižkov). Read guest experiences and write your own review."
+      "title": "Reviews & ratings — NOA Matcha Café Prague 1",
+      "description": "Reviews and ratings of NOA Matcha café, Prague 1 (Old Town). Read guest experiences and write your own review."
     },
     "about": {
-      "title": "About — NOA Matcha Café Prague 3, Žižkov",
-      "description": "Ceremonial matcha sourced directly from Japanese tea gardens, hand-whisked with a bamboo chasen. Honesty, craft and calm at Husitská 55, Prague 3 – Žižkov."
+      "title": "About — NOA Matcha Café Prague 1, Old Town",
+      "description": "Ceremonial matcha sourced directly from Japanese tea gardens, hand-whisked with a bamboo chasen. Honesty, craft and calm at Revoluční 763/15, Prague 1 – Old Town."
     },
     "contact": {
-      "title": "Contact — NOA Matcha Café Prague 3, Žižkov",
-      "description": "Find us at Husitská 55, 130 00 Prague 3 (Žižkov). Opening hours, phone, e-mail and map for NOA Matcha café. Drop by for a cup of matcha."
+      "title": "Contact — NOA Matcha Café Prague 1, Old Town",
+      "description": "Find us at Revoluční 763/15, 110 00 Prague 1 (Old Town). Opening hours, phone, e-mail and map for NOA Matcha café. Drop by for a cup of matcha."
     },
     "lpLatte": {
-      "title": "Matcha Latte Prague — NOA Matcha Café, Žižkov",
-      "description": "Creamy matcha latte made with ceremonial matcha from Japan. Hot or iced, fruity and signature variations. NOA Matcha Café, Husitská 55, Prague 3 – Žižkov."
+      "title": "Matcha Latte Prague — NOA Matcha Café, Old Town",
+      "description": "Creamy matcha latte made with ceremonial matcha from Japan. Hot or iced, fruity and signature variations. NOA Matcha Café, Revoluční 763/15, Prague 1 – Old Town."
     },
-    "lpZizkov": {
-      "title": "Café in Žižkov — NOA Matcha Café, Prague 3",
-      "description": "Matcha café in Žižkov. Ceremonial matcha latte and premium coffee at Husitská 55, Prague 3. Open every day. Drop by for a cup."
+    "lpOldTown": {
+      "title": "Café in Old Town — NOA Matcha Café, Prague 1",
+      "description": "Matcha café in Prague's Old Town. Ceremonial matcha latte and premium coffee at Revoluční 763/15, Prague 1. Open Mon–Sat. Drop by for a cup."
     },
     "lpCeremonial": {
-      "title": "Ceremonial matcha — NOA Matcha Café, Prague 3",
-      "description": "What is ceremonial matcha? The highest grade of green tea from Japan, hand-whisked. Try it at NOA Matcha Café, Husitská 55, Prague 3."
+      "title": "Ceremonial matcha — NOA Matcha Café, Prague 1",
+      "description": "What is ceremonial matcha? The highest grade of green tea from Japan, hand-whisked. Try it at NOA Matcha Café, Revoluční 763/15, Prague 1."
     },
     "lpTogo": {
-      "title": "Matcha to go — NOA Matcha Café, Prague 3 (Žižkov)",
-      "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Husitská 55, Prague 3 – Žižkov. Open every day."
+      "title": "Matcha to go — NOA Matcha Café, Prague 1 (Old Town)",
+      "description": "Matcha latte and coffee to go (takeaway) made with ceremonial matcha. Fast and fresh. Revoluční 763/15, Prague 1 – Old Town. Open Mon–Sat."
     },
     "lpIced": {
-      "title": "Iced matcha Prague — NOA Matcha Café, Žižkov",
-      "description": "Refreshing iced matcha (iced matcha latte) made with ceremonial matcha. Fruity and signature variations. Husitská 55, Prague 3 – Žižkov."
+      "title": "Iced matcha Prague — NOA Matcha Café, Old Town",
+      "description": "Refreshing iced matcha (iced matcha latte) made with ceremonial matcha. Fruity and signature variations. Revoluční 763/15, Prague 1 – Old Town."
     },
     "lpCatering": {
       "title": "Matcha catering & corporate events — NOA Matcha Café",
@@ -286,7 +294,7 @@
     },
     "lpRecipe": {
       "title": "How to make matcha latte at home — recipe | NOA Matcha",
-      "description": "A simple step-by-step matcha latte recipe: what you need, whisking with a chasen and a tip on quality matcha. NOA Matcha Café Prague 3."
+      "description": "A simple step-by-step matcha latte recipe: what you need, whisking with a chasen and a tip on quality matcha. NOA Matcha Café Prague 1."
     }
   }
 }

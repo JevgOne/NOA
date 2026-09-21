@@ -1,5 +1,5 @@
 import { type Locale, getT } from '@/lib/i18n';
-import { business } from '@/lib/site';
+import { business, operator } from '@/lib/site';
 import Footline from '@/components/Footline';
 import LeafRule from '@/components/LeafRule';
 import OpenStatus from '@/components/OpenStatus';
@@ -37,6 +37,14 @@ export default function ContactContent({ locale }: { locale: Locale }) {
             </span>
           </div>
           <div className="crow">
+            <span className="k">{t('cTransport')}</span>
+            <span className="v">
+              {t('cTram')}
+              <br />
+              {t('cMetro')}
+            </span>
+          </div>
+          <div className="crow">
             <span className="k">{t('cPhone')}</span>
             <span className="v">
               <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a>
@@ -51,9 +59,19 @@ export default function ContactContent({ locale }: { locale: Locale }) {
           <div className="crow">
             <span className="k">{t('cHours')}</span>
             <span className="v" style={{ minWidth: '170px' }}>
-              <span className="hours-row"><span>{t('dMonFri')}</span><span>8:00 – 20:00</span></span>
-              <span className="hours-row"><span>{t('dSat')}</span><span>9:00 – 20:00</span></span>
-              <span className="hours-row"><span>{t('dSun')}</span><span>9:00 – 18:00</span></span>
+              <span className="hours-row"><span>{t('dMonFri')}</span><span>8:00 – 16:30</span></span>
+              <span className="hours-row"><span>{t('dSat')}</span><span>9:00 – 15:00</span></span>
+              <span className="hours-row"><span>{t('dSun')}</span><span>{t('closed')}</span></span>
+            </span>
+          </div>
+          <div className="crow">
+            <span className="k">{t('cOperator')}</span>
+            <span className="v">
+              {operator.name}
+              <br />
+              {t('cIco')} {operator.ico} · {t('cDic')} {operator.dic}
+              <br />
+              {t('cResponsible')}: {operator.responsible}
             </span>
           </div>
         </div>

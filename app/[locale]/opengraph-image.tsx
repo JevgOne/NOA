@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
-export const alt = 'NOA Matcha Café — Husitská 55, Praha 3';
+export const alt = 'NOA Matcha Café — Revoluční 763/15, Praha 1';
 
 export default async function OpengraphImage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -32,7 +32,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           {tagline}
         </div>
         <div style={{ display: 'flex', fontSize: 26, color: '#6E6553', letterSpacing: 4, marginTop: 22 }}>
-          Husitská 55 · Praha 3
+          Revoluční 763/15 · Praha 1
         </div>
       </div>
     ),

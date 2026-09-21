@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'NOA Matcha Café',
     short_name: 'NOA Matcha',
-    description: 'Prémiová matcha kavárna — Husitská 55, Praha 3 (Žižkov).',
+    description: 'Prémiová matcha kavárna — Revoluční 763/15, Praha 1 (Staré Město).',
     start_url: '/cs',
     display: 'standalone',
     background_color: '#EAD9BD',

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { SITE_URL, business } from '@/lib/site';
+import { SITE_URL, business, operator } from '@/lib/site';
 import { type Locale, type PageKey, getMessages, pathFor, languageAlternates } from '@/lib/i18n';
-import { classic, signature, boyfriends } from '@/lib/menu';
+import { classic, signature, boyfriends, priceOf } from '@/lib/menu';
 import { social } from '@/lib/site';
 import { galleryPhotos, photoUrl } from '@/lib/gallery';
 import type { Review, Aggregate } from '@/lib/reviews-db';
@@ -11,11 +11,11 @@ const ogLocale: Record<Locale, string> = { cs: 'cs_CZ', en: 'en_US' };
 const keywords: Record<Locale, string[]> = {
   cs: [
     'matcha', 'matcha Praha', 'matcha kavárna', 'matcha latte Praha', 'ceremoniální matcha',
-    'kavárna Praha 3', 'kavárna Žižkov', 'matcha Žižkov', 'Husitská 55', 'NOA Matcha', 'káva Praha 3',
+    'kavárna Praha 1', 'kavárna Staré Město', 'matcha Staré Město', 'matcha Náměstí Republiky', 'Revoluční 763/15', 'NOA Matcha', 'káva Praha 1',
   ],
   en: [
     'matcha', 'matcha Prague', 'matcha café', 'matcha latte Prague', 'ceremonial matcha',
-    'café Prague 3', 'café Žižkov', 'matcha Žižkov', 'Husitská 55', 'NOA Matcha', 'coffee Prague 3',
+    'café Prague 1', 'café Old Town Prague', 'matcha Old Town', 'matcha Náměstí Republiky', 'Revoluční 763/15', 'NOA Matcha', 'coffee Prague 1',
   ],
 };
 
@@ -106,6 +106,9 @@ export function cafeSchema(locale: Locale): Record<string, unknown> {
     url: `${SITE_URL}${pathFor(locale, 'home')}`,
     telephone: business.phone,
     email: business.email,
+    legalName: business.legalName,
+    taxID: operator.ico,
+    vatID: operator.dic,
     address,
     geo: { '@type': 'GeoCoordinates', latitude: business.geo.latitude, longitude: business.geo.longitude },
     servesCuisine: business.servesCuisine as unknown as string[],
@@ -195,9 +198,6 @@ export function menuSchema(locale: Locale): Record<string, unknown> {
   };
 }
 
-function priceOf(id: string): number {
-  return [...classic, ...signature, ...boyfriends].find((d) => d.id === id)?.price ?? 0;
-}
 
 // BreadcrumbList pro podstránky.
 export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>): Record<string, unknown> {
@@ -209,7 +209,7 @@ export function breadcrumbSchema(locale: Locale, page: Exclude<PageKey, 'home'>)
     about: m.navAbout,
     contact: m.navContact,
     lpLatte: m.lpLatteCrumb,
-    lpZizkov: m.lpZizkovCrumb,
+    lpOldTown: m.lpOldTownCrumb,
     lpCeremonial: m.lpCeremonialCrumb,
     lpTogo: m.lpTogoCrumb,
     lpIced: m.lpIcedCrumb,

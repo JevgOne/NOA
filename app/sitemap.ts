@@ -7,7 +7,7 @@ const galleryImages = galleryPhotos.map((p) => photoUrl(p.id, 1200));
 
 const pages: PageKey[] = [
   'home', 'menu', 'gallery', 'reviews', 'about', 'contact',
-  'lpLatte', 'lpZizkov', 'lpCeremonial', 'lpTogo', 'lpIced', 'lpCatering', 'lpRecipe',
+  'lpLatte', 'lpOldTown', 'lpCeremonial', 'lpTogo', 'lpIced', 'lpCatering', 'lpRecipe',
 ];
 
 const priorityFor: Partial<Record<PageKey, number>> = { home: 1, menu: 0.9, reviews: 0.8, contact: 0.8 };

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { type Locale, getT, pathFor, landingPages } from '@/lib/i18n';
+import { operator } from '@/lib/site';
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = getT(locale);
@@ -30,7 +31,10 @@ export default function Footer({ locale }: { locale: Locale }) {
           </span>
         ))}
       </nav>
-      <div className="fc">© 2026 · Praha 3, Žižkov</div>
+      <div className="fc">© 2026 · Praha 1, Staré Město</div>
+      <div className="foot-legal">
+        {t('cOperator')}: {operator.name} · {t('cIco')} {operator.ico} · {t('cDic')} {operator.dic}
+      </div>
       <div className="foot-credit">
         {locale === 'cs' ? 'Web vytvořil ' : 'Website by '}
         <a href="https://www.weblyx.cz" target="_blank" rel="noopener noreferrer">Weblyx</a>
