@@ -1,12 +1,14 @@
 import { type Locale, getT } from '@/lib/i18n';
-import { business, operator } from '@/lib/site';
+import { business, operator, transport } from '@/lib/site';
 import Footline from '@/components/Footline';
 import LeafRule from '@/components/LeafRule';
 import OpenStatus from '@/components/OpenStatus';
+import HoursTable from '@/components/HoursTable';
 
 export default function ContactContent({ locale }: { locale: Locale }) {
   const t = getT(locale);
   const mapQuery = encodeURIComponent(`${business.street}, ${business.postalCode} ${business.city}`);
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;
 
   return (
     <main id="main">
@@ -29,51 +31,83 @@ export default function ContactContent({ locale }: { locale: Locale }) {
           <OpenStatus locale={locale} className="contact-status" />
         </div>
 
-        <div className="contact-info">
-          <div className="crow">
-            <span className="k">{t('cAddr')}</span>
-            <span className="v">
-              {business.street}, {business.postalCode} {business.city}
-            </span>
-          </div>
-          <div className="crow">
-            <span className="k">{t('cTransport')}</span>
-            <span className="v">
-              {t('cTram')}
+        <div className="contact-grid">
+          {/* ---- Kde nás najdete ---- */}
+          <section className="ccard">
+            <h2 className="ccard-k">{t('cAddr')}</h2>
+            <p className="ccard-addr">
+              {business.street}
               <br />
-              {t('cMetro')}
-            </span>
-          </div>
-          <div className="crow">
-            <span className="k">{t('cPhone')}</span>
-            <span className="v">
-              <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a>
-            </span>
-          </div>
-          <div className="crow">
-            <span className="k">{t('cMail')}</span>
-            <span className="v">
-              <a href={`mailto:${business.email}`}>{business.email}</a>
-            </span>
-          </div>
-          <div className="crow">
-            <span className="k">{t('cHours')}</span>
-            <span className="v" style={{ minWidth: '170px' }}>
-              <span className="hours-row"><span>{t('dMonFri')}</span><span>8:00 – 16:30</span></span>
-              <span className="hours-row"><span>{t('dSat')}</span><span>9:00 – 15:00</span></span>
-              <span className="hours-row"><span>{t('dSun')}</span><span>{t('closed')}</span></span>
-            </span>
-          </div>
-          <div className="crow">
-            <span className="k">{t('cOperator')}</span>
-            <span className="v">
-              {operator.name}
-              <br />
-              {t('cIco')} {operator.ico} · {t('cDic')} {operator.dic}
-              <br />
-              {t('cResponsible')}: {operator.responsible}
-            </span>
-          </div>
+              {business.postalCode} {business.city} – {business.district}
+            </p>
+            <a className="ccard-link" href={directionsUrl} target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+                <path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11Z" />
+                <circle cx="12" cy="10" r="2.3" />
+              </svg>
+              {t('cDirections')}
+            </a>
+
+            <h2 className="ccard-k ccard-k2">{t('cTransport')}</h2>
+            <ul className="transit">
+              <li>
+                <span className="transit-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
+                    <rect x="6" y="6" width="12" height="12" rx="2.5" />
+                    <path d="M6 12.5h12M9 18l-1.5 2.5M15 18l1.5 2.5M9 3.5h6M12 3.5V6" />
+                    <circle cx="9.3" cy="15.3" r=".7" fill="currentColor" />
+                    <circle cx="14.7" cy="15.3" r=".7" fill="currentColor" />
+                  </svg>
+                </span>
+                <span className="transit-body">
+                  <span className="transit-stop">
+                    {t('cTram')} · {transport.tram.stop}
+                  </span>
+                  <span className="transit-lines">
+                    {transport.tram.lines.map((l) => (
+                      <span key={l} className="line-pill">{l}</span>
+                    ))}
+                    <span className="transit-walk">{t('cWalk').replace('{min}', String(transport.tram.walkMin))}</span>
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span className="transit-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
+                    <circle cx="12" cy="12" r="8.5" />
+                    <path d="M8 16V8l4 5 4-5v8" />
+                  </svg>
+                </span>
+                <span className="transit-body">
+                  <span className="transit-stop">
+                    {t('cMetro')} · {transport.metro.stop}
+                  </span>
+                  <span className="transit-lines">
+                    <span className="line-pill line-pill--metro-b">{transport.metro.line}</span>
+                    <span className="transit-walk">{t('cWalk').replace('{min}', String(transport.metro.walkMin))}</span>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          {/* ---- Otevírací doba + kontakt ---- */}
+          <section className="ccard">
+            <h2 className="ccard-k">{t('cHours')}</h2>
+            <HoursTable locale={locale} />
+
+            <h2 className="ccard-k ccard-k2">{t('cReach')}</h2>
+            <ul className="reach">
+              <li>
+                <span className="reach-k">{t('cPhone')}</span>
+                <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a>
+              </li>
+              <li>
+                <span className="reach-k">{t('cMail')}</span>
+                <a href={`mailto:${business.email}`}>{business.email}</a>
+              </li>
+            </ul>
+          </section>
         </div>
 
         <div className="map-block">
@@ -92,6 +126,10 @@ export default function ContactContent({ locale }: { locale: Locale }) {
             />
           </div>
         </div>
+
+        <p className="operator-note">
+          {t('cOperator')}: {operator.name} · {t('cIco')} {operator.ico} · {t('cDic')} {operator.dic} · {t('cResponsible')}: {operator.responsible}
+        </p>
 
         <div className="socials">
           <a href="#" aria-label="Instagram">

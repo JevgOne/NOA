@@ -410,3 +410,37 @@ footer.site .foot-credit a:hover{color:var(--green)}
   .lightbox{animation:none}
   .ambient{display:none}
 }
+
+/* ---- Contact: two cards (address + transit / hours + reach) ---- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,3vw,1.6rem);max-width:880px;margin:0 auto}
+.ccard{background:var(--paper-hi);border:1px solid var(--rule-soft);border-radius:3px;padding:clamp(1.4rem,3.5vw,2rem)}
+.ccard-k{font-family:var(--font-cinzel);font-weight:500;color:var(--green);letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding-bottom:.7rem;margin-bottom:.9rem;border-bottom:1px solid var(--rule-soft)}
+.ccard-k2{margin-top:1.8rem}
+.ccard-addr{font-size:1.28rem;line-height:1.45;color:var(--green)}
+.ccard-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:.8rem;font-family:var(--font-cinzel);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;color:var(--wine);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.ccard-link:hover{border-color:var(--wine)}
+.ccard-link svg{width:15px;height:15px}
+.transit{list-style:none;display:flex;flex-direction:column;gap:1rem}
+.transit li{display:flex;gap:.85rem;align-items:flex-start}
+.transit-ico{flex-shrink:0;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);display:grid;place-items:center;color:var(--green)}
+.transit-ico svg{width:20px;height:20px}
+.transit-body{display:flex;flex-direction:column;gap:.35rem}
+.transit-stop{font-size:1.05rem;color:var(--ink)}
+.transit-lines{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem}
+.line-pill{min-width:1.9rem;padding:.12rem .45rem;border-radius:3px;background:var(--wine);color:var(--paper-hi);font-family:var(--font-cinzel);font-weight:600;font-size:.74rem;letter-spacing:.04em;text-align:center;line-height:1.4}
+.line-pill--metro-b{background:#E3B21C;color:#2B2410;border-radius:50%;min-width:0;width:1.6rem;height:1.6rem;padding:0;display:grid;place-items:center}
+.transit-walk{font-style:italic;font-size:.95rem;color:var(--muted);margin-left:.3rem}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.45rem .6rem;margin:0 -.6rem;border-radius:3px;font-size:1.05rem}
+.hours-list .hl-day{color:var(--ink);display:inline-flex;align-items:baseline;gap:.5rem}
+.hours-list .hl-time{color:var(--green);font-weight:500;font-variant-numeric:tabular-nums}
+.hours-list .is-closed .hl-time{color:var(--wine)}
+.hours-list .is-today{background:var(--paper-lo)}
+.hours-list .hl-today{font-family:var(--font-cinzel);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.reach{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.reach li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.reach-k{font-size:1rem;color:var(--muted)}
+.reach a{font-size:1.1rem;color:var(--wine);text-decoration:none}
+.reach a:hover{text-decoration:underline}
+.operator-note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:1.4rem;line-height:1.6}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}

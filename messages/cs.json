@@ -53,7 +53,7 @@
     { "q": "Máte i klasickou kávu?", "a": "Ano. Kromě matchy děláme i espresso, cappuccino, flat white, latte a další — najdete je v našem menu." },
     { "q": "Co je ceremoniální matcha?", "a": "Ceremoniální matcha je nejvyšší kvalita zeleného čaje z prvního jarního sběru, jemně mletá na kamenných mlýncích. Má sytou barvu a hedvábnou, nehořkou chuť." },
     { "q": "Dá se u vás rezervovat stůl?", "a": "Ano, stůl si můžete rezervovat telefonicky — kontakt najdete na stránce Kontakt." },
-    { "q": "Jaká je otevírací doba?", "a": "Po–Pá 8:00–16:30, So 9:00–15:00. V neděli máme zavřeno." }
+    { "q": "Jaká je otevírací doba?", "a": "Po–So 8:00–20:00. V neděli máme zavřeno." }
   ],
   "lpCtaMenu": "Zobrazit menu a ceny",
   "lpCtaContact": "Kde nás najdete",
@@ -87,7 +87,7 @@
       "sections": [
         { "h": "Co u nás najdete", "p": "Ceremoniální matcha latte (teplé i ledové), ovocné a signature matcha nápoje, klasickou kávu (espresso, cappuccino, flat white, latte) a klid k posezení." },
         { "h": "Kde nás najdete", "p": "Revoluční 763/15, 110 00 Praha 1 – Staré Město. Tramvajová zastávka Dlouhá třída (linky 6, 8, 15, 26) je hned před domem, metro B Náměstí Republiky je asi 5 minut pěšky." },
-        { "h": "Otevírací doba", "p": "Po–Pá 8:00–16:30, So 9:00–15:00, v neděli zavřeno." }
+        { "h": "Otevírací doba", "p": "Po–So 8:00–20:00, v neděli zavřeno." }
       ],
       "ogHeading": "Matcha kavárna, Praha 1"
     },
@@ -113,7 +113,7 @@
       "sections": [
         { "h": "Co si dáte s sebou", "p": "Matcha latte (hot / iced), ovocné a signature matcha nápoje i klasickou kávu. Vše čerstvě připravené na počkání." },
         { "h": "Kde si vyzvednete", "p": "Stavte se na Revoluční 763/15, Praha 1 – Staré Město. Hned u tramvajové zastávky Dlouhá třída a pár minut od metra Náměstí Republiky — ideální cestou do práce i na procházku." },
-        { "h": "Otevírací doba", "p": "Po–Pá 8:00–16:30, So 9:00–15:00, v neděli zavřeno." }
+        { "h": "Otevírací doba", "p": "Po–So 8:00–20:00, v neděli zavřeno." }
       ],
       "ogHeading": "Matcha s sebou"
     },
@@ -171,7 +171,7 @@
   "inviteH": "Otevřeno od pondělí do soboty",
   "inviteAddrK": "Adresa",
   "inviteHoursK": "Otevírací doba",
-  "inviteHoursV": "Po–Pá 8–16:30 · So 9–15",
+  "inviteHoursV": "Po–So 8–20",
   "inviteBtn": "Navštivte nás",
   "classic": "Classic Matcha",
   "signature": "Signature Matcha",
@@ -224,14 +224,19 @@
   "contactLead": "Zastavte se na šálek. Rádi vás uvidíme.",
   "cAddr": "Adresa",
   "cTransport": "Spojení",
-  "cTram": "Tram Dlouhá třída (6, 8, 15, 26) — hned před domem",
-  "cMetro": "Metro B Náměstí Republiky — 5 min pěšky",
+  "cTram": "Tramvaj",
+  "cMetro": "Metro",
+  "cWalk": "{min} min pěšky",
+  "cDirections": "Navigovat",
+  "cToday": "dnes",
+  "cReach": "Napište nebo zavolejte",
   "cPhone": "Telefon",
   "cMail": "E-mail",
   "cHours": "Otevírací doba",
   "dMonFri": "Po – Pá",
   "dSat": "Sobota",
   "dSun": "Neděle",
+  "dMonSat": "Po – So",
   "closed": "Zavřeno",
   "cOperator": "Provozovatel",
   "cIco": "IČO",

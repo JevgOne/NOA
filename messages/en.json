@@ -53,7 +53,7 @@
     { "q": "Do you also serve regular coffee?", "a": "Yes. Besides matcha we make espresso, cappuccino, flat white, latte and more — see our menu." },
     { "q": "What is ceremonial matcha?", "a": "Ceremonial matcha is the highest grade of green tea from the first spring harvest, stone-milled into a fine powder. It has a vivid color and a silky, non-bitter taste." },
     { "q": "Can I reserve a table?", "a": "Yes, you can reserve a table by phone — find the contact on the Contact page." },
-    { "q": "What are your opening hours?", "a": "Mon–Fri 8:00–16:30, Sat 9:00–15:00. Closed on Sundays." }
+    { "q": "What are your opening hours?", "a": "Mon–Sat 8:00–20:00. Closed on Sundays." }
   ],
   "lpCtaMenu": "View menu & prices",
   "lpCtaContact": "Find us",
@@ -87,7 +87,7 @@
       "sections": [
         { "h": "What we offer", "p": "Ceremonial matcha latte (hot or iced), fruity and signature matcha drinks, classic coffee (espresso, cappuccino, flat white, latte) and a calm place to sit." },
         { "h": "Where to find us", "p": "Revoluční 763/15, 110 00 Prague 1 – Old Town. The Dlouhá třída tram stop (lines 6, 8, 15, 26) is right outside, and metro line B at Náměstí Republiky is about a 5-minute walk." },
-        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
+        { "h": "Opening hours", "p": "Mon–Sat 8:00–20:00, closed on Sundays." }
       ],
       "ogHeading": "Matcha café, Prague 1"
     },
@@ -113,7 +113,7 @@
       "sections": [
         { "h": "What you can grab", "p": "Matcha latte (hot / iced), fruity and signature matcha drinks and classic coffee. All freshly made to order." },
         { "h": "Where to pick it up", "p": "Drop by Revoluční 763/15, Prague 1 – Old Town. Right by the Dlouhá třída tram stop and a few minutes from Náměstí Republiky metro — perfect on your way to work or a walk." },
-        { "h": "Opening hours", "p": "Mon–Fri 8:00–16:30, Sat 9:00–15:00, closed on Sundays." }
+        { "h": "Opening hours", "p": "Mon–Sat 8:00–20:00, closed on Sundays." }
       ],
       "ogHeading": "Matcha to go"
     },
@@ -171,7 +171,7 @@
   "inviteH": "Open Monday to Saturday",
   "inviteAddrK": "Address",
   "inviteHoursK": "Opening hours",
-  "inviteHoursV": "Mon–Fri 8–16:30 · Sat 9–15",
+  "inviteHoursV": "Mon–Sat 8–20",
   "inviteBtn": "Visit us",
   "classic": "Classic Matcha",
   "signature": "Signature Matcha",
@@ -224,14 +224,19 @@
   "contactLead": "Drop by for a cup. We'd love to see you.",
   "cAddr": "Address",
   "cTransport": "Getting here",
-  "cTram": "Tram Dlouhá třída (6, 8, 15, 26) — right outside",
-  "cMetro": "Metro B Náměstí Republiky — 5 min walk",
+  "cTram": "Tram",
+  "cMetro": "Metro",
+  "cWalk": "{min} min walk",
+  "cDirections": "Directions",
+  "cToday": "today",
+  "cReach": "Call or write to us",
   "cPhone": "Phone",
   "cMail": "E-mail",
   "cHours": "Opening hours",
   "dMonFri": "Mon – Fri",
   "dSat": "Saturday",
   "dSun": "Sunday",
+  "dMonSat": "Mon – Sat",
   "closed": "Closed",
   "cOperator": "Operator",
   "cIco": "Company ID",

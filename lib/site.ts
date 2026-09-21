@@ -23,10 +23,10 @@ export const business = {
   // Placeholder — doplň reálné profily.
   sameAs: [] as string[],
   openingHours: [
-    { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:00', closes: '16:30' },
-    { days: ['Saturday'], opens: '09:00', closes: '15:00' },
-    // Neděle zavřeno.
+    { label: 'dMonSat', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '08:00', closes: '20:00' },
   ],
+  // Dny bez otevírací doby — zobrazí se jako „Zavřeno“.
+  closedDays: [{ label: 'dSun', days: ['Sunday'] }],
   // Placeholder hodnocení — nahraď reálnými čísly (např. z Google Business).
   aggregateRating: { ratingValue: 4.9, reviewCount: 127 },
 } as const;
@@ -44,6 +44,12 @@ export const social = {
   instagram: 'https://instagram.com/',
   instagramHandle: '@noamatcha',
   facebook: 'https://facebook.com/',
+} as const;
+
+// Spojení MHD (ověřeno z dat PID, 9/2026).
+export const transport = {
+  tram: { stop: 'Dlouhá třída', lines: ['6', '8', '15', '26'], walkMin: 1 },
+  metro: { stop: 'Náměstí Republiky', line: 'B', walkMin: 5 },
 } as const;
 
 export const OG_IMAGE = '/og.png';
